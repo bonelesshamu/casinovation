@@ -1,0 +1,60 @@
+<nobr>ユーザ名：</nobr> <input id="user" value="栗原">
+<br>
+<nobr>所持コイン：</nobr> <input id="coin" value="10000">
+<br><br><br>
+<form id="option1">
+  <nobr>選択肢１：</nobr>  <input id="text_input1" value="0"> <input type="submit" value="投票する">
+</form>
+<form id="option2">
+  <nobr>選択肢２：</nobr>  <input id="text_input2" value="0"> <input type="submit" value="投票する">
+</form>
+<form id="option3">
+  <nobr>選択肢３：</nobr>  <input id="text_input3" value="0"> <input type="submit" value="投票する">
+</form>
+<form id="option4">
+  <nobr>選択肢４：</nobr>  <input id="text_input4" value="0"> <input type="submit" value="投票する">
+</form>
+<ul id="msg_box">
+</ul>
+<script>
+  var dispatcher = new WebSocketRails("localhost:3000/websocket"); //ドメインは適宜変える
+  var option1 = document.getElementById("option1");
+  var text_input1 = document.getElementById("text_input1");
+
+  var option2 = document.getElementById("option2");
+  var text_input2 = document.getElementById("text_input2");
+
+  var option3 = document.getElementById("option3");
+  var text_input3 = document.getElementById("text_input3");
+
+  var option4 = document.getElementById("option4");
+  var text_input4 = document.getElementById("text_input4");
+
+  var msg_box = document.getElementById("msg_box");
+
+  option1.onsubmit = function(e){
+    dispatcher.trigger("send_message", { msg: "option1: "+text_input1.value });
+    e.preventDefault();
+  }
+
+  option2.onsubmit = function(e){
+    dispatcher.trigger("send_message", { msg: "option2: "+text_input2.value });
+    e.preventDefault();
+  }
+
+  option3.onsubmit = function(e){
+    dispatcher.trigger("send_message", { msg: "option3: "+text_input3.value });
+    e.preventDefault();
+  }
+
+  option4.onsubmit = function(e){
+    dispatcher.trigger("send_message", { msg: "option4: "+text_input4.value });
+    e.preventDefault();
+  }
+
+  dispatcher.bind("spread_message", function(data) {
+    var li = document.createElement("li");
+    li.textContent = data.msg;
+    msg_box.appendChild(li);
+  });
+</script>

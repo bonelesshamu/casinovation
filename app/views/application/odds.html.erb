@@ -1,0 +1,41 @@
+<p>オッズ一覧</p>
+<form id="option1">
+  <nobr>選択肢１：</nobr>  <input id="odds1" value="0"> <nobr>トータルベット：</nobr>  <input id="total1" value="0">
+</form>
+<form id="option2">
+  <nobr>選択肢２：</nobr>  <input id="odds2" value="0"> <nobr>トータルベット：</nobr>  <input id="total2" value="0">
+</form>
+<form id="option3">
+  <nobr>選択肢３：</nobr>  <input id="odds3" value="0"> <nobr>トータルベット：</nobr>  <input id="total3" value="0">
+</form>
+<form id="option4">
+  <nobr>選択肢４：</nobr>  <input id="odds4" value="0"> <nobr>トータルベット：</nobr>  <input id="total4" value="0">
+</form>
+
+<script>
+  var dispatcher = new WebSocketRails("localhost:3000/websocket"); //ドメインは適宜変える
+  var total1 = document.getElementById("total1");
+  var total2 = document.getElementById("total2");
+  var total3 = document.getElementById("total3");
+  var total4 = document.getElementById("total4");
+
+  dispatcher.bind("spread_message", function(data) {
+    var total = total1.value + total2.value + total3.value + total4.value;
+    message = data.msg.split(":");
+    if ("option1" === message[0] ){
+      total1.value = Number(total1.value) + Number(message[1]);
+    }
+    else if("option2" === message[0] ){
+      total2.value = Number(total2.value) + Number(message[1]);
+    }
+    else if("option3" === message[0] ){
+      total3.value = Number(total3.value) + Number(message[1]);
+    }
+    else if("option4" === message[0] ){
+      total4.value = Number(total4.value) + Number(message[1]);
+    }
+    else{
+     alert("error");
+    }
+  });
+</script>
