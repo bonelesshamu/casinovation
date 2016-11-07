@@ -1,60 +1,53 @@
 Rails.application.routes.draw do
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
+# root to:'application#home'
+# get  '/odds' => 'application#odds'
 
-  root to:'application#home'
-  get  '/odds' => 'application#odds'
+  namespace :staff do
+    root 'top#index'
+    get 'login' => 'top#login'
+    post 'login' => 'top#login_result'
+    get 'betPrize' => 'top#bet_prize'
+    post 'betPrize_result' => 'top#bet_prize_result'
+    get 'home' => 'top#home'
+    get 'betQuestion1' => 'top#bet_question1'
+    get 'betQuestion2' => 'top#bet_question2'
+    get 'betQuestion3' => 'top#bet_question3'
+    get 'betQuestion4' => 'top#bet_question4'
+    get 'betQuestion5' => 'top#bet_question5'
+    post 'betQuestion_result' => 'top#bet_question_result'
+#    delete 'session' => 'sessions#destroy'
+  end
+  
+  namespace :operator do
+    root 'top#index'
+    get 'coin_status' => 'top#coin_status'
+    get 'prize_status' => 'top#prize_status'
+    get 'question1_status' => 'top#question1_status'
+    get 'question2_status' => 'top#question2_status'
+    get 'question3_status' => 'top#question3_status'
+    get 'question4_status' => 'top#question4_status'
+    get 'question5_status' => 'top#question5_status'
+    post 'question1_result' => 'top#question1_result'
+    post 'question2_result' => 'top#question2_result'
+    post 'question3_result' => 'top#question3_result'
+    post 'question4_result' => 'top#question4_result'
+    post 'question5_result' => 'top#question5_result'
+    get 'prize1_status' => 'top#prize1_status'
+    get 'prize1_result' => 'top#prize1_result'
+    get 'prize2_status' => 'top#prize2_status'
+    get 'prize2_result' => 'top#prize2_result'
+    get 'prize3_status' => 'top#prize3_status'
+    get 'prize3_result' => 'top#prize3_result'
+    get 'prize4_status' => 'top#prize4_status'
+    get 'prize4_result' => 'top#prize4_result'
+    get 'prize5_status' => 'top#prize5_status'
+    get 'prize5_result' => 'top#prize5_result'
+  end
 
-
-  # You can have the root of your site routed with "root"
-  # root 'welcome#index'
-
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
-
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  namespace :admin do
+    root 'top#index'
+#    get 'login' => 'sessions#new', as: :login
+#    post 'session' => 'sessions#create', as: :login
+#    delete 'session' => 'sessions#destroy'
+  end
 end

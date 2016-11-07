@@ -1,0 +1,25 @@
+<h1>question5 result</h1>
+
+<form method="get">
+  <button formaction="/operator">ホームに戻る</button><br>
+</form>
+
+<table>
+<tr>
+  <td>id</td>
+  <td>name</td>
+  <td>bet</td>
+  <td>reward</td>
+</tr>
+<% @staffmemberdatas.each do |data|  %>
+<%   hoge=@staffmemberoptiondatas.find_by(name: data.name, question: "question5", option: @answer)  %>
+<%   if hoge %>
+<tr>
+  <td><%= data.id %></td>
+  <td><%= data.name %></td>
+  <td><%= hoge.bet %></td>
+  <td><%= hoge.bet*2 %></td>
+</tr>
+<% end %>
+<% end %>
+</table>

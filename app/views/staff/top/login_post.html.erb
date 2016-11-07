@@ -1,0 +1,18 @@
+<h1>login completed</h1>
+<h1>your id is <%= @user_id %></h1>
+<h1>your name is "<%= @name %>"</h1>
+<a href="betPrize" method="post">"景品投票画面へ移動します"</a>
+<table>
+<tr>
+  <td>id</td>
+  <td>name</td>
+  <td>coin</td>
+</tr>
+<% @staffmemberdatas.each do |data|  %>
+<tr>
+  <td><%= data.id %></td>
+  <td><%= data.name %></td>
+  <td><%= data.coin %></td>
+</tr>
+<% end %>
+</table>

@@ -1,0 +1,26 @@
+<h1>home</h1>
+<h1>your id is <%= @user_id %></h1>
+<h1>your name is "<%= @name %>"</h1>
+<h1>your coin is "<%= @coin %>"</h1>
+<h1>your prize is "<%= @prize %>"</h1>
+<form method="get">
+    <button formaction="betQuestion1">問題１の選択画面に移動します</button><br>
+    <button formaction="betQuestion2">問題２の選択画面に移動します</button><br>
+    <button formaction="betQuestion3">問題３の選択画面に移動します</button><br>
+    <button formaction="betQuestion4">問題４の選択画面に移動します</button><br>
+    <button formaction="betQuestion5">問題５の選択画面に移動します</button><br>
+</form>
+<table>
+<tr>
+  <td>id</td>
+  <td>name</td>
+  <td>coin</td>
+</tr>
+<% @staffmemberdatas.each do |data|  %>
+<tr>
+  <td><%= data.id %></td>
+  <td><%= data.name %></td>
+  <td><%= data.coin %></td>
+</tr>
+<% end %>
+</table>

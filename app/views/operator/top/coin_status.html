@@ -1,0 +1,21 @@
+<h1>coin status of all members</h1>
+
+<form method="get">
+    <button formaction="/operator">ホームに戻る</button><br>
+</form>
+
+<table>
+<tr>
+  <td>id</td>
+  <td>name</td>
+  <td>coin</td>
+</tr>
+<% @staffmemberdatas.each do |data|  %>
+<tr>
+  <td><%= data.id %></td>
+  <td><%= data.name %></td>
+  <td><%= data.coin %></td>
+</tr>
+<% end %>
+</table>
+

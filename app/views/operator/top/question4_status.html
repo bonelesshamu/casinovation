@@ -1,0 +1,28 @@
+<h1>question4 status of all members</h1>
+
+<form method="get">
+  <button formaction="/operator">ホームに戻る</button><br>
+</form>
+<form method="post">
+  <input type="hidden" name="answer" value="option1">
+  <button formaction="question4_result">回答４結果発表</button><br>
+</form>
+
+<table>
+<tr>
+  <td>id</td>
+  <td>name</td>
+  <td>option</td>
+  <td>bet</td>
+</tr>
+<% @staffmemberdatas.each do |data|  %>
+<%   hoge=@staffmemberoptiondatas.find_by(name: data.name, question:"question4")  %>
+<tr>
+  <td><%= data.id %></td>
+  <td><%= data.name %></td>
+  <td><%= hoge.option %></td>
+  <td><%= hoge.bet %></td>
+</tr>
+<% end %>
+</table>
+

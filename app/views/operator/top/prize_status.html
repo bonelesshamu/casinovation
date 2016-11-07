@@ -1,0 +1,22 @@
+<h1>prize status of all members</h1>
+
+<form method="get">
+    <button formaction="/operator">ホームに戻る</button><br>
+</form>
+
+<table>
+<tr>
+  <td>id</td>
+  <td>name</td>
+  <!-- <td>coin</td> あえてコイン表示をしない-->
+  <td>prize</td>
+</tr>
+<% @staffmemberdatas.each do |data|  %>
+<tr>
+  <td><%= data.id %></td>
+  <td><%= data.name %></td>
+  <!-- <td><%= data.coin %></td> あえてコイン表示をしない＆景品でソートしない-->
+  <td><%= data.prize %></td>
+</tr>
+<% end %>
+</table>
