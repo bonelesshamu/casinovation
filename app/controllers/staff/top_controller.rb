@@ -15,7 +15,6 @@ class Staff::TopController < ApplicationController
     newStaffMember = StaffMember.new
     newStaffMember.name = @name
     newStaffMember.coin = 10000
-    newStaffMember.prize = "prize1"
     newStaffMember.save    
     #p StaffMember.all
     @staffmemberdatas = StaffMember.all
@@ -24,9 +23,36 @@ class Staff::TopController < ApplicationController
     render action: 'login_post'
   end
 
-  def bet_prize
+  def home
     @user_id = session[:user_id]
     puts "user_id: " + @user_id.to_s
+    currentStaffMember = StaffMember.find_by(id: @user_id)
+    @name = currentStaffMember.name
+    @coin = currentStaffMember.coin
+    @already_bet = false
+    @prize1_bet = 0
+    @prize2_bet = 0
+    @prize3_bet = 0
+    @prize4_bet = 0
+    @prize5_bet = 0
+    p currentStaffMember
+    if currentStaffMember.prize_bet_flag
+      @already_bet = true
+      @prize1_bet = currentStaffMember.prize1_bet
+      @prize2_bet = currentStaffMember.prize2_bet
+      @prize3_bet = currentStaffMember.prize3_bet
+      @prize4_bet = currentStaffMember.prize4_bet
+      @prize5_bet = currentStaffMember.prize5_bet
+    end
+    @staffmemberdatas = StaffMember.all
+    render action: "home"
+  end
+
+  def bet_prize
+    @user_id = session[:user_id]
+    currentStaffMember = StaffMember.find_by(id: @user_id)
+    @name = currentStaffMember.name
+    @coin = currentStaffMember.coin
     render action: "bet_prize"
   end
 
@@ -34,22 +60,39 @@ class Staff::TopController < ApplicationController
     @user_id = session[:user_id]
     puts "user_id: " + @user_id.to_s
     currentStaffMember = StaffMember.find_by(id: @user_id)
-    @prize = params["prize"]
-    currentStaffMember.prize = @prize
-    currentStaffMember.save
-    render action: "bet_prize_result"
-  end
+    @already_bet = false
 
-  def home
-    @user_id = session[:user_id]
-    puts "user_id: " + @user_id.to_s
-    currentStaffMember = StaffMember.find_by(id: @user_id)
-    p currentStaffMember
-    @name = currentStaffMember.name
-    @coin = currentStaffMember.coin
-    @prize = currentStaffMember.prize
-    @staffmemberdatas = StaffMember.all
-    render action: "home"
+    if currentStaffMember 
+      if currentStaffMember.prize_bet_flag
+        @already_bet = true
+        @prize1_bet = currentStaffMember.prize1_bet
+        @prize2_bet = currentStaffMember.prize2_bet
+        @prize3_bet = currentStaffMember.prize3_bet
+        @prize4_bet = currentStaffMember.prize4_bet
+        @prize5_bet = currentStaffMember.prize5_bet
+      else
+        @prize1_bet = params["prize1"]
+        currentStaffMember.prize1_bet = @prize1_bet.to_i
+        @prize2_bet = params["prize2"]
+        currentStaffMember.prize2_bet = @prize2_bet.to_i
+        @prize3_bet = params["prize3"]
+        currentStaffMember.prize3_bet = @prize3_bet.to_i
+        @prize4_bet = params["prize4"]
+        currentStaffMember.prize4_bet = @prize4_bet.to_i
+        @prize5_bet = params["prize5"]
+        currentStaffMember.prize5_bet = @prize5_bet.to_i
+        currentStaffMember.prize_bet_flag = true
+        currentStaffMember.coin = 0
+        currentStaffMember.save
+      end
+    else
+      @prize1_bet = "Error"
+      @prize2_bet = "Error"
+      @prize3_bet = "Error"
+      @prize4_bet = "Error"
+      @prize5_bet = "Error"
+    end
+    render action: "bet_prize_result"
   end
 
   def bet_question1

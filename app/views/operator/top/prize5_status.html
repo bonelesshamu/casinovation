@@ -1,7 +1,7 @@
 <h1>prize5 status</h1>
 
 <form method="get">
-  <button formaction="/operator">ホームに戻る</button><br>
+  <button formaction="index">ホームに戻る</button><br>
   <button formaction="prize5_result">景品５結果発表</button><br>
 </form>
 
@@ -9,14 +9,14 @@
 <tr>
   <td>id</td>
   <td>name</td>
-  <td>coin</td>
+  <td>bet</td>
 </tr>
 <% @staffmemberdatas.each do |data|  %>
-<%   if data.prize=="prize5" %>
+<%   if data.prize5_bet != 0 %>
 <tr>
   <td><%= data.id %></td>
   <td><%= data.name %></td>
-  <td><%= data.coin %></td>
+  <td><%= data.prize5_bet %></td>
 </tr>
 <% end %>
 <% end %>

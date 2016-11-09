@@ -8,15 +8,23 @@
 <tr>
   <td>id</td>
   <td>name</td>
-  <!-- <td>coin</td> あえてコイン表示をしない-->
-  <td>prize</td>
+  <td>prize_bet_flag</td>
+  <td>prize1_bet</td>
+  <td>prize2_bet</td>
+  <td>prize3_bet</td>
+  <td>prize4_bet</td>
+  <td>prize5_bet</td>
 </tr>
 <% @staffmemberdatas.each do |data|  %>
 <tr>
   <td><%= data.id %></td>
   <td><%= data.name %></td>
-  <!-- <td><%= data.coin %></td> あえてコイン表示をしない＆景品でソートしない-->
-  <td><%= data.prize %></td>
+  <td><%= data.prize_bet_flag %></td>
+  <td><%= data.prize1_bet %></td>
+  <td><%= data.prize2_bet %></td>
+  <td><%= data.prize3_bet %></td>
+  <td><%= data.prize4_bet %></td>
+  <td><%= data.prize5_bet %></td>
 </tr>
 <% end %>
 </table>

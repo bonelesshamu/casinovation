@@ -1,7 +1,7 @@
 <h1>question3 result</h1>
 
 <form method="get">
-  <button formaction="/operator">ホームに戻る</button><br>
+  <button formaction="index">ホームに戻る</button><br>
 </form>
 
 <table>
@@ -13,7 +13,7 @@
 </tr>
 <% @staffmemberdatas.each do |data|  %>
 <%   hoge=@staffmemberoptiondatas.find_by(name: data.name, question: "question3", option: @answer)  %>
-<%   if hoge %>
+<%   if hoge && hoge.bet %>
 <tr>
   <td><%= data.id %></td>
   <td><%= data.name %></td>

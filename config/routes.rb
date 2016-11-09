@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   namespace :staff do
     root 'top#index'
+    get 'index' => 'top#index'
     get 'login' => 'top#login'
     post 'login' => 'top#login_result'
     get 'betPrize' => 'top#bet_prize'
@@ -19,7 +20,7 @@ Rails.application.routes.draw do
   end
   
   namespace :operator do
-    root 'top#index'
+    get 'index' => 'top#index'
     get 'coin_status' => 'top#coin_status'
     get 'prize_status' => 'top#prize_status'
     get 'question1_status' => 'top#question1_status'
@@ -42,6 +43,8 @@ Rails.application.routes.draw do
     get 'prize4_result' => 'top#prize4_result'
     get 'prize5_status' => 'top#prize5_status'
     get 'prize5_result' => 'top#prize5_result'
+    get 'staff_member' => 'top#staff_member'
+    get 'staff_member_option' => 'top#staff_member_option'
   end
 
   namespace :admin do

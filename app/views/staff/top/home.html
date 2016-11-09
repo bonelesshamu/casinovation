@@ -2,14 +2,23 @@
 <h1>your id is <%= @user_id %></h1>
 <h1>your name is "<%= @name %>"</h1>
 <h1>your coin is "<%= @coin %>"</h1>
-<h1>your prize is "<%= @prize %>"</h1>
 <form method="get">
     <button formaction="betQuestion1">問題１の選択画面に移動します</button><br>
     <button formaction="betQuestion2">問題２の選択画面に移動します</button><br>
     <button formaction="betQuestion3">問題３の選択画面に移動します</button><br>
     <button formaction="betQuestion4">問題４の選択画面に移動します</button><br>
     <button formaction="betQuestion5">問題５の選択画面に移動します</button><br>
+    <button formaction="betPrize">景品の選択画面に移動します</button><br>
 </form>
+<br><br><br>
+<% if @already_bet %>
+<h1>your prize1 bet is "<%= @prize1_bet %>"</h1>
+<h1>your prize2 bet is "<%= @prize2_bet %>"</h1>
+<h1>your prize3 bet is "<%= @prize3_bet %>"</h1>
+<h1>your prize4 bet is "<%= @prize4_bet %>"</h1>
+<h1>your prize5 bet is "<%= @prize5_bet %>"</h1>
+<% end %>
+
 <table>
 <tr>
   <td>id</td>

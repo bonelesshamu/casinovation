@@ -1,5 +1,12 @@
 <h1>bet prize completed</h1>
 <h1>your id is <%= @user_id %></h1>
-<h1>your prize is "<%= @prize %>"</h1>
+<% if @already_bet %>
+<h1>already bet</h1>
+<% end %>
+<h1>your prize1 bet is "<%= @prize1_bet %>"</h1>
+<h1>your prize2 bet is "<%= @prize2_bet %>"</h1>
+<h1>your prize3 bet is "<%= @prize3_bet %>"</h1>
+<h1>your prize4 bet is "<%= @prize4_bet %>"</h1>
+<h1>your prize5 bet is "<%= @prize5_bet %>"</h1>
 <a href="home">"ホーム画面へ移動します"</a>
-<!--<a href="result" value="結果表示画面へ移動します">-->
+

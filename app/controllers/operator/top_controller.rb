@@ -90,12 +90,14 @@ class Operator::TopController < ApplicationController
     @staffmemberoptiondatas = StaffMemberOption.all
     @staffmemberdatas.each do |data|
       correctUser = @staffmemberoptiondatas.find_by(name: data.name, question: question)
-      if correctUser.option == answer
-        data.coin = data.coin + correctUser.bet
-        data.save
-      else
-        data.coin = data.coin - correctUser.bet
-        data.save
+      if correctUser && correctUser.bet
+        if correctUser.option && correctUser.option == answer
+          data.coin = data.coin + correctUser.bet
+          data.save
+        else
+          data.coin = data.coin - correctUser.bet
+          data.save
+        end
       end
     end
   end
@@ -126,41 +128,44 @@ class Operator::TopController < ApplicationController
   end
 
   def prize1_result
-    @winner = prize_result( StaffMember.where("prize='prize1'") )
+    @winner = prize_result( :prize1_bet, :prize1_winner )
     render action: 'prize1_result'
   end
 
   def prize2_result
-    @winner = prize_result( StaffMember.where("prize='prize2'") )
+    @winner = prize_result( :prize2_bet, :prize2_winner )
     render action: 'prize2_result'
   end
 
   def prize3_result
-    @winner = prize_result( StaffMember.where("prize='prize3'") )
+    @winner = prize_result( :prize3_bet, :prize3_winner )
     render action: 'prize3_result'
   end
 
   def prize4_result
-    @winner = prize_result( StaffMember.where("prize='prize4'") )
+    @winner = prize_result( :prize4_bet, :prize4_winner )
     render action: 'prize4_result'
   end
 
   def prize5_result
-    @winner = prize_result( StaffMember.where("prize='prize5'") )
+    @winner = prize_result( :prize5_bet, :prize5_winner )
     render action: 'prize5_result'
   end
 
-  def prize_result staffmemberdatas
+  def prize_result prize_bet, prize_winner
     win = rand(0...100)
     tmp = 0.0
-    coin_sum = staffmemberdatas.sum(:coin)
+    bet_sum = StaffMember.sum(prize_bet)
     @winner = ""
+    if bet_sum == 0
+      return
+    end
 
-    staffmemberdatas.each do |data|
-      tmp += data.coin.to_f / coin_sum.to_f * 100.0
+    StaffMember.all.each do |data|
+      tmp += data[prize_bet] / bet_sum.to_f * 100.0
       if win < tmp
         @winner = data.name
-        data.acquirer = true
+        data.attributes = { prize_winner => true }
         data.save
         break
       end
@@ -168,4 +173,11 @@ class Operator::TopController < ApplicationController
     return @winner
   end
 
+  def staff_member
+    @staffmember = StaffMember.all
+  end
+
+  def staff_member_option
+    @staffmemberoption = StaffMemberOption.all
+  end
 end
