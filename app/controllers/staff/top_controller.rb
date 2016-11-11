@@ -107,24 +107,36 @@ class Staff::TopController < ApplicationController
   def bet_question2
     @user_id = session[:user_id]
     puts "user_id: " + @user_id.to_s
+    currentStaffMember = StaffMember.find_by(id: @user_id)
+    @name = currentStaffMember.name
+    @coin = currentStaffMember.coin
     render action: "bet_question2"
   end
 
   def bet_question3
     @user_id = session[:user_id]
     puts "user_id: " + @user_id.to_s
+    currentStaffMember = StaffMember.find_by(id: @user_id)
+    @name = currentStaffMember.name
+    @coin = currentStaffMember.coin
     render action: "bet_question3"
   end
 
   def bet_question4
     @user_id = session[:user_id]
     puts "user_id: " + @user_id.to_s
+    currentStaffMember = StaffMember.find_by(id: @user_id)
+    @name = currentStaffMember.name
+    @coin = currentStaffMember.coin
     render action: "bet_question4"
   end
 
   def bet_question5
     @user_id = session[:user_id]
     puts "user_id: " + @user_id.to_s
+    currentStaffMember = StaffMember.find_by(id: @user_id)
+    @name = currentStaffMember.name
+    @coin = currentStaffMember.coin
     render action: "bet_question5"
   end
 
@@ -133,6 +145,7 @@ class Staff::TopController < ApplicationController
     puts "user_id: " + @user_id.to_s
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
+    @coin = currentStaffMember.coin
     @question_id = params["question_id"]
     @option = params["option"]
     @bet = params["bet"]
