@@ -98,6 +98,9 @@ class Staff::TopController < ApplicationController
   def bet_question1
     @user_id = session[:user_id]
     puts "user_id: " + @user_id.to_s
+    currentStaffMember = StaffMember.find_by(id: @user_id)
+    @name = currentStaffMember.name
+    @coin = currentStaffMember.coin
     render action: "bet_question1"
   end
 
