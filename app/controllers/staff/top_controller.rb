@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class Staff::TopController < ApplicationController
   protect_from_forgery :except => [:login_result, :bet_prize_result, :bet_question_result]
   
@@ -6,8 +7,13 @@ class Staff::TopController < ApplicationController
   end
 
   def login
-    p StaffMember.all
-    render action: 'login'
+    @user_id = session[:user_id]
+    p @user_id
+    if @user_id
+      home
+    else
+      render action: 'login'
+    end
   end
 
   def login_result
@@ -20,7 +26,28 @@ class Staff::TopController < ApplicationController
     @staffmemberdatas = StaffMember.all
     @user_id = newStaffMember.id
     session[:user_id] = @user_id
-    render action: 'login_post'
+    #render action: 'login_post'
+    currentStaffMember = StaffMember.find_by(id: @user_id)
+    @name = currentStaffMember.name
+    @coin = currentStaffMember.coin
+    @already_bet = false
+    @prize1_bet = 0
+    @prize2_bet = 0
+    @prize3_bet = 0
+    @prize4_bet = 0
+    @prize5_bet = 0
+    p currentStaffMember
+    if currentStaffMember.prize_bet_flag
+      @already_bet = true
+      @prize1_bet = currentStaffMember.prize1_bet
+      @prize2_bet = currentStaffMember.prize2_bet
+      @prize3_bet = currentStaffMember.prize3_bet
+      @prize4_bet = currentStaffMember.prize4_bet
+      @prize5_bet = currentStaffMember.prize5_bet
+    end
+    @staffmemberdatas = StaffMember.all
+    render action: "home"
+
   end
 
   def home
@@ -102,7 +129,14 @@ class Staff::TopController < ApplicationController
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
     puts @coin
-    render action: "bet_question1"
+    currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: "question1")
+    if currentStaffMemberOption.nil?
+      render action: "bet_question1"
+    else
+      @option = currentStaffMemberOption.option
+      @bet = currentStaffMemberOption.bet
+      render action: "bet_question_result"
+    end
   end
 
   def bet_question2
@@ -111,7 +145,14 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
-    render action: "bet_question2"
+    currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: "question1")
+    if currentStaffMemberOption.nil?
+      render action: "bet_question2"
+    else
+      @option = currentStaffMemberOption.option
+      @bet = currentStaffMemberOption.bet
+      render action: "bet_question_result"
+    end
   end
 
   def bet_question3
@@ -120,7 +161,14 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
-    render action: "bet_question3"
+    currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: "question1")
+    if currentStaffMemberOption.nil?
+      render action: "bet_question3"
+    else
+      @option = currentStaffMemberOption.option
+      @bet = currentStaffMemberOption.bet
+      render action: "bet_question_result"
+    end
   end
 
   def bet_question4
@@ -129,7 +177,14 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
-    render action: "bet_question4"
+    currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: "question1")
+    if currentStaffMemberOption.nil?
+      render action: "bet_question4"
+    else
+      @option = currentStaffMemberOption.option
+      @bet = currentStaffMemberOption.bet
+      render action: "bet_question_result"
+    end
   end
 
   def bet_question5
@@ -138,7 +193,14 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
-    render action: "bet_question5"
+    currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: "question1")
+    if currentStaffMemberOption.nil?
+      render action: "bet_question5"
+    else
+      @option = currentStaffMemberOption.option
+      @bet = currentStaffMemberOption.bet
+      render action: "bet_question_result"
+    end
   end
 
   def bet_question_result
@@ -150,7 +212,8 @@ class Staff::TopController < ApplicationController
     @question_id = params["question_id"]
     @option = params["option"]
     @bet = params["bet"]
-    if StaffMemberOption.find_by(name: @name, question: @question_id).nil?
+    currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: @question_id)
+    if currentStaffMemberOption.nil?
       currentStaffMemberOption = StaffMemberOption.new
       currentStaffMemberOption.name = @name
       currentStaffMemberOption.question = @question_id
@@ -160,6 +223,8 @@ class Staff::TopController < ApplicationController
       p currentStaffMemberOption
     else
       puts "already betted"
+      @option = currentStaffMemberOption.option
+      @bet = currentStaffMemberOption.bet
     end
     render action: "bet_question_result"
   end

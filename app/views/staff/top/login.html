@@ -60,15 +60,18 @@
     <script src="https://getbootstrap.com/examples/offcanvas/offcanvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
     <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>
+    <%= javascript_include_tag 'jquery.blockUI' %>
     <script>
 		$(function(){
 			$('#form').validator().on('submit', function(e) {
 				if (e.isDefaultPrevented()) {
 				} else {
-					lstorage.set('name', $('#name').val());
-					lstorage.set('point', 100);
 				}
 			});
+
+			if(!navigator.cookieEnabled) {
+				blockUI.show('cookieを有効にしてください。');
+			}
 		});
     </script>
 	<style>/** CSS：記述スペース */

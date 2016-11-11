@@ -14,3 +14,26 @@ display = (function(){
 		}
 	};
 }());
+var blockUI = (function() {
+	return {
+		show : function(str) {
+			$.blockUI({
+				message: str,
+				css: {
+					border: 'none',
+					padding: '10px',
+					backgroundColor: '#333',
+					opacity: 1.0,
+					color: '#fff'
+				},
+				overlayCSS: {
+					backgroundColor: '#000',
+					opacity: 0.8
+				}
+			});
+		},
+		hide : function() {
+			$.unblockUI();
+		}
+	};
+}());

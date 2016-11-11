@@ -42,11 +42,11 @@ question5
 }
 
 option_names = %w{
-option1
-option2
-option3
-option4
-option5
+1
+2
+3
+4
+5
 }
 
 (staff_names.length*5).times do |n|
