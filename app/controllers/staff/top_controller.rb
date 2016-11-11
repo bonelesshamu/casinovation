@@ -101,6 +101,7 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
+    puts @coin
     render action: "bet_question1"
   end
 

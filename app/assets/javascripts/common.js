@@ -1,6 +1,7 @@
 display = (function(){
 	return {
 		showUserInfo : function(point) {
+			console.log(point);
 			$('#ex8').attr('data-slider-max', point);
 		},
 		showDecision : function() {
