@@ -3671,3 +3671,1595 @@ Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702
 Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Waiting for 1 connection(s) to finish, can take up to 30 sec, CTRL+C to stop now
 Exiting
+=> Booting Thin
+=> Rails 4.2.6 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Thin web server (v1.7.0 codename Dunder Mifflin)
+Maximum connections set to 1024
+Listening on 0.0.0.0:3000, CTRL+C to stop
+
+
+Started GET "/operator/prize_status" for 1.77.30.0 at 2016-11-11 04:57:19 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Operator::TopController#prize_status as HTML
+  [1m[35mStaffMember Load (0.2ms)[0m  SELECT "staff_members".* FROM "staff_members"
+  Rendered operator/top/prize_status.html within layouts/application (9.9ms)
+Completed 200 OK in 258ms (Views: 249.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/operator/index" for 1.77.30.0 at 2016-11-11 04:57:23 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#index as HTML
+  Rendered operator/top/index.html within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/operator/staff_member_option" for 1.77.30.0 at 2016-11-11 04:57:23 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#staff_member_option as HTML
+  [1m[36mStaffMemberOption Load (0.4ms)[0m  [1mSELECT "staff_member_options".* FROM "staff_member_options"[0m
+  Rendered operator/top/staff_member_option.html within layouts/application (12.1ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/operator/staff_member" for 1.77.30.0 at 2016-11-11 04:57:23 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#staff_member as HTML
+  [1m[35mStaffMember Load (0.3ms)[0m  SELECT "staff_members".* FROM "staff_members"
+  Rendered operator/top/staff_member.html within layouts/application (4.5ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1&_=1478840243008" for 1.77.30.0 at 2016-11-11 04:57:24 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1&_=1478840243009" for 1.77.30.0 at 2016-11-11 04:57:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1&_=1478840243010" for 1.77.30.0 at 2016-11-11 04:57:26 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1478840243011" for 1.77.30.0 at 2016-11-11 04:57:26 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1478840243012" for 1.77.30.0 at 2016-11-11 04:57:26 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1478840243013" for 1.77.30.0 at 2016-11-11 04:57:26 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1&_=1478840243014" for 1.77.30.0 at 2016-11-11 04:57:26 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1&_=1478840243015" for 1.77.30.0 at 2016-11-11 04:57:26 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1&_=1478840243016" for 1.77.30.0 at 2016-11-11 04:57:26 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1&_=1478840243017" for 1.77.30.0 at 2016-11-11 04:57:26 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1&_=1478840243018" for 1.77.30.0 at 2016-11-11 04:57:27 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1&_=1478840243019" for 1.77.30.0 at 2016-11-11 04:57:27 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1&_=1478840243020" for 1.77.30.0 at 2016-11-11 04:57:27 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1&_=1478840243021" for 1.77.30.0 at 2016-11-11 04:57:27 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1&_=1478840243022" for 1.77.30.0 at 2016-11-11 04:57:27 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1&_=1478840243023" for 1.77.30.0 at 2016-11-11 04:57:28 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1&_=1478840243024" for 1.77.30.0 at 2016-11-11 04:57:28 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1478840243025" for 1.77.30.0 at 2016-11-11 04:57:28 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1478840243026" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1478840243027" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1&_=1478840243028" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1&_=1478840243029" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1&_=1478840243030" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1&_=1478840243031" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1&_=1478840243032" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1&_=1478840243033" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1&_=1478840243034" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1&_=1478840243035" for 1.77.30.0 at 2016-11-11 04:57:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/staff/home" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#home as HTML
+user_id: 22
+  [1m[36mStaffMember Load (0.2ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+#<StaffMember id: 22, name: "aa", coin: 0, prize1_bet: 0, prize1_winner: false, prize2_bet: 0, prize2_winner: false, prize3_bet: 0, prize3_winner: false, prize4_bet: 0, prize4_winner: false, prize5_bet: 0, prize5_winner: false, prize_bet_flag: true>
+  [1m[35mStaffMember Load (0.2ms)[0m  SELECT "staff_members".* FROM "staff_members"
+  Rendered staff/top/home.html within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 21.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/admin/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 1.77.30.0 at 2016-11-11 04:58:56 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/staff/bet_question1" for 1.77.30.0 at 2016-11-11 04:58:59 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question1 as HTML
+user_id: 22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered staff/top/bet_question1.html within layouts/application (0.7ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/staff/js/common.js" for 1.77.30.0 at 2016-11-11 04:58:59 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/staff/js/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.6ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (56.5ms)
+
+
+Started GET "/staff/bet_question1" for 1.77.30.0 at 2016-11-11 05:00:15 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question1 as HTML
+user_id: 22
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered staff/top/bet_question1.html within layouts/application (0.1ms)
+Completed 200 OK in 89ms (Views: 87.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/admin/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/staff/js/common.js" for 1.77.30.0 at 2016-11-11 05:00:16 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/staff/js/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (45.7ms)
+
+
+Started GET "/staff/js/common.js" for 1.77.30.0 at 2016-11-11 05:00:17 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/staff/js/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.2ms)
+
+
+Started GET "/staff/bet_question1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question1 as HTML
+user_id: 22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered staff/top/bet_question1.html within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/admin/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/staff/common.js" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/staff/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.5ms)
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for 1.77.30.0 at 2016-11-11 05:00:51 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/staff/common.js" for 1.77.30.0 at 2016-11-11 05:00:52 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/staff/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.5ms)
+
+
+Started GET "/staff/bet_question1" for 150.70.173.51 at 2016-11-11 05:01:24 +0000
+Cannot render console from 150.70.173.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question1 as */*
+user_id: 
+  [1m[35mStaffMember Load (0.3ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/staff/top_controller.rb:102:in `bet_question1'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.8ms)
+
+
+Started GET "/staff/bet_question1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question1 as HTML
+user_id: 22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered staff/top/bet_question1.html within layouts/application (0.1ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/admin/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:29 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:30 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:30 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:30 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:30 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/staff/common.js" for 1.77.30.0 at 2016-11-11 05:01:30 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/staff/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (46.0ms)
+
+
+Started GET "/staff/bet_question1" for 1.77.30.0 at 2016-11-11 05:01:35 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question1 as HTML
+user_id: 22
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered staff/top/bet_question1.html within layouts/application (0.1ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/admin/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:01:35 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:01:35 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/staff/common.js" for 1.77.30.0 at 2016-11-11 05:01:36 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/staff/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (44.1ms)
+
+
+Started GET "/staff/bet_question1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question1 as HTML
+user_id: 22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered staff/top/bet_question1.html within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/admin/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:04 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:05 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/javascripts/assets/common.js" for 1.77.30.0 at 2016-11-11 05:04:05 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/assets/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.4ms)
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:05 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/javascripts/assets/common.js" for 1.77.30.0 at 2016-11-11 05:04:05 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/assets/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.6ms)
+
+
+Started GET "/staff/bet_question1" for 1.77.30.0 at 2016-11-11 05:04:07 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question1 as HTML
+user_id: 22
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 22]]
+  Rendered staff/top/bet_question1.html within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/admin/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/javascripts/assets/common.js" for 1.77.30.0 at 2016-11-11 05:04:08 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/assets/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (52.2ms)
+
+
+Started GET "/staff/bet_question1" for 1.77.30.0 at 2016-11-11 05:04:24 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question1 as HTML
+user_id: 22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+  Rendered staff/top/bet_question1.html within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 22.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/admin/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:24 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:24 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:24 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 1.77.30.0 at 2016-11-11 05:04:24 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:24 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:24 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/common.self-591cb8c4eccd2fa5bbbdedb4fe17efdd3953bcd8b6e92e2848c6db509da22dc2.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/javascripts/assets/common.js" for 1.77.30.0 at 2016-11-11 05:04:25 +0000
+Cannot render console from 1.77.30.0! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/assets/common.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:40:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.0) lib/faye/adapters/thin.rb:44:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.4) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.4) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+

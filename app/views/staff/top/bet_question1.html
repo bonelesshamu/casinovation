@@ -35,13 +35,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Casinovation</a>
+          <a class="navbar-brand" href="home">Casinovation</a>
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="bet_prize">Gift Exchange</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
@@ -117,11 +112,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.3.0/bootstrap-slider.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
     <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>
+    <%= javascript_include_tag 'common' %>
     <script>/** JS：記述スペース */
 		$(function(){
 			$('#form').validator().on('submit', function(e) {
 				if (e.isDefaultPrevented()) {
 				} else {
+				}
+			});
+			
+			display.showUserInfo($('point').val);
+			
+			$('#ex8').slider({
+				tooltip : 'always'
+			}).on('slideStop', function(ev){
+				var val = $('#ex8').data('slider').getValue();
+				if(val > 0) {
+					display.showDecision();
+				} else {
+					display.hideDecision();
 				}
 			});
 		});
