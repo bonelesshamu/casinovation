@@ -20,7 +20,7 @@ class Staff::TopController < ApplicationController
     @name = params["name"]
     newStaffMember = StaffMember.new
     newStaffMember.name = @name
-    newStaffMember.coin = 10000
+    newStaffMember.coin = 50
     newStaffMember.save    
     #p StaffMember.all
     @staffmemberdatas = StaffMember.all
@@ -214,6 +214,9 @@ class Staff::TopController < ApplicationController
     @bet = params["bet"]
     currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: @question_id)
     if currentStaffMemberOption.nil?
+      currentStaffMember.coin -= @bet.to_i
+      currentStaffMember.save
+      @coin = currentStaffMember.coin
       currentStaffMemberOption = StaffMemberOption.new
       currentStaffMemberOption.name = @name
       currentStaffMemberOption.question = @question_id

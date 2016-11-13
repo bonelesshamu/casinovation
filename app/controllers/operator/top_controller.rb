@@ -92,11 +92,10 @@ class Operator::TopController < ApplicationController
       correctUser = @staffmemberoptiondatas.find_by(name: data.name, question: question)
       if correctUser && correctUser.bet
         if correctUser.option && correctUser.option == answer
-          data.coin = data.coin + correctUser.bet
+          data.coin += 2 * correctUser.bet
           data.save
         else
-          data.coin = data.coin - correctUser.bet
-          data.save
+          #do nothing
         end
       end
     end
