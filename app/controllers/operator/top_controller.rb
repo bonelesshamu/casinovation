@@ -2,6 +2,7 @@ class Operator::TopController < ApplicationController
   protect_from_forgery :except => [:question1_result, :question2_result, :question3_result, :question4_result, :question5_result]
 
   def index
+    p QuestionResult.all
     render action: 'index'
   end
 
@@ -50,6 +51,10 @@ class Operator::TopController < ApplicationController
     @staffmemberdatas = StaffMember.all
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question1")
+    currentQuestionResult = QuestionResult.find_by(id: 1)
+    currentQuestionResult.already_shown_question1_flag = "true"
+    currentQuestionResult.save
+    p QuestionResult.find_by(id: 1)
     render action: 'question1_result'
   end
 
@@ -58,6 +63,9 @@ class Operator::TopController < ApplicationController
     @staffmemberdatas = StaffMember.all
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question2")
+    currentQuestionResult = QuestionResult.find_by(id: 1)
+    currentQuestionResult.already_shown_question2_flag = true
+    currentQuestionResult.save
     render action: 'question2_result'
   end
 
@@ -66,6 +74,9 @@ class Operator::TopController < ApplicationController
     @staffmemberdatas = StaffMember.all
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question3")
+    currentQuestionResult = QuestionResult.find_by(id: 1)
+    currentQuestionResult.already_shown_question3_flag = true
+    currentQuestionResult.save
     render action: 'question3_result'
   end
 
@@ -74,6 +85,9 @@ class Operator::TopController < ApplicationController
     @staffmemberdatas = StaffMember.all
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question4")
+    currentQuestionResult = QuestionResult.find_by(id: 1)
+    currentQuestionResult.already_shown_question4_flag = true
+    currentQuestionResult.save
     render action: 'question4_result'
   end
 
@@ -82,6 +96,9 @@ class Operator::TopController < ApplicationController
     @staffmemberdatas = StaffMember.all
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question5")
+    currentQuestionResult = QuestionResult.find_by(id: 1)
+    currentQuestionResult.already_shown_question5_flag = true
+    currentQuestionResult.save
     render action: 'question5_result'
   end
 
@@ -178,5 +195,15 @@ class Operator::TopController < ApplicationController
 
   def staff_member_option
     @staffmemberoption = StaffMemberOption.all
+  end
+
+  def flag_init
+    currentQuestionResult = QuestionResult.find_by(id: 1)
+    currentQuestionResult.already_shown_question1_flag = false
+    currentQuestionResult.already_shown_question2_flag = false
+    currentQuestionResult.already_shown_question3_flag = false
+    currentQuestionResult.already_shown_question4_flag = false
+    currentQuestionResult.already_shown_question5_flag = false
+    currentQuestionResult.save
   end
 end

@@ -49,6 +49,7 @@ Rails.application.routes.draw do
     get 'prize5_result' => 'top#prize5_result'
     get 'staff_member' => 'top#staff_member'
     get 'staff_member_option' => 'top#staff_member_option'
+    get 'flag_init' => 'top#flag_init'
   end
 
   namespace :admin do

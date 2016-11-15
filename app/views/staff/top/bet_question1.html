@@ -53,7 +53,7 @@
           
           <div class="row">
             <div class="col-xs-12 col-lg-12">
-			<form id="form" data-toggle="validator" role="form" method="post" action="bet_question_result">
+			<form id="form" data-toggle="validator" role="form" method="post" action="bet_question_result1">
 				<div>
 					<p class="text-muted text-center">番号を選択してください。</p>
 				</div>
@@ -108,9 +108,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
     <%= javascript_include_tag 'common' %>
     <script>/** JS：記述スペース */
-		$(document).ready(function() {
-			$('#contents').fadeIn(1000);
-		});
+                $(document).on('turbolinks:request-start', function() {
+                        $('#contents').css('display', 'none');
+                });
+                $(document).on('turbolinks:load', function() {
+                        $('#contents').fadeIn(100);    
+                });
 		$(function(){
 			var characters = [];
 			var maxpoint = $('#point').text();

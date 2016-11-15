@@ -25,7 +25,7 @@
     <![endif]-->
   </head>
 
-  <body id="contents">
+  <body>
     <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -34,7 +34,7 @@
       </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
-    <div class="contents">
+    <div class="container">
 
       <div class="row">
 
@@ -46,49 +46,39 @@
                   <strong id="name" class="pull-right margin-right"><%= @name %> さん</strong>
               </div>
           </div>
-          
+          <br/>
           <div class="row">
             <div class="col-xs-12 col-lg-12">
-			<form id="form" data-toggle="validator" role="form" method="post" action="bet_question_result">
-				
-				<div class="mb2"></div>
-				
-				<div class="form-group col-xs-12 col-lg-12">
-					<p class="text-muted text-center">問題選択画面に移動します。</p>
-				</div>
-				
-				<div class="form-group col-xs-12 col-lg-12">
-					<div class="col-xs-6 col-lg-6">
-						<p><a class="btn btn-default btn-lg btn-block" href="bet_question1" role="button">問題1</a></p>
-					</div>
-					<div class="col-xs-6 col-lg-6">
-						<p><a class="btn btn-default btn-lg btn-block" href="bet_question2" role="button">問題2</a></p>
-					</div>
-					<div class="col-xs-6 col-lg-6">
-						<p><a class="btn btn-default btn-lg btn-block" href="bet_question3" role="button">問題3</a></p>
-					</div>
-					<div class="col-xs-6 col-lg-6">
-						<p><a class="btn btn-default btn-lg btn-block" href="bet_question4" role="button">問題4</a></p>
-					</div>
-					<div class="col-xs-6 col-lg-6">
-						<p><a class="btn btn-default btn-lg btn-block" href="bet_question5" role="button">問題5</a></p>
-					</div>
-					<div class="col-xs-6 col-lg-6">
-					</div>
-				</div>
-				
-				<div class="mb5"></div>
-				
-				<div class="form-group col-xs-12 col-lg-12">
-					<p class="text-muted text-center">景品選択画面に移動します。</p>
-				</div>
-				
-				<div class="form-group col-xs-12 col-lg-12">
-					<a class="btn btn-default btn-lg btn-block" href="bet_prize" role="button">景品画面</a>
-				</div>
-			</form>
-			</div>
+              <div class="text-muted text-center value" id="my-answer"><%= @option %></div>
+            </div>
           </div><!--/row-->
+
+
+          <div class="mb1"></div>
+          <div class="alert alert-warning text-center" role="alert">
+             <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+<% if @already_shown_question2_flag == false %>
+             解答をおまちください。
+<% end %>
+          </div>
+
+
+          <div class="alert alert-success text-center" role="alert">
+             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+             正解！
+          </div>
+
+          <div class="alert alert-danger text-center" role="alert">
+             <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+             不正解！
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-lg-12">
+                <p><a class="btn btn-default btn-lg btn-block" href="home" role="button">Homeへ戻る</a></p>
+            </div>
+          </div>
+
         </div><!--/.col-xs-12.col-sm-9-->
         
       </div><!--/row-->
@@ -106,41 +96,46 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://getbootstrap.com/examples/offcanvas/offcanvas.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.3.0/bootstrap-slider.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
-    <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>
     <%= javascript_include_tag 'common' %>
+    <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>
     <script>/** JS：記述スペース */
-		$(document).on('turbolinks:request-start', function() {
-			$('#contents').css('display', 'none');
-		});
-		$(document).on('turbolinks:load', function() {
-			$('#contents').fadeIn(100);	
-		});
 		$(function(){
-			$('#form').validator().on('submit', function(e) {
-				if (e.isDefaultPrevented()) {
-				} else {
-				}
-			});
 		});
     </script>
     <style>/** CSS：記述スペース */
-        .margin-right {
-          margin-right: 1em;
+        .slider {
+        width: 100% !important;
+        }
+        .footer {
+          bottom: 0;
+          width: 100%;
+          /* Set the fixed height of the footer here */
+          height: 0%;
+        }
+        @import url(https://fonts.googleapis.com/css?family=Dosis:700);
+        .value {
+          font-family: "Dosis", Helvetica, Arial, sans-serif; 
+          color: #34495e;
+          padding-top: 40px;
+          text-align: center;
+          font-weight: bold;
+          font-size: 10em;
+          width: 300px; 
+          height: 100px;
+          line-height: 60px;
+          margin: 40px auto;
+          letter-spacing: -.07em;
+          text-shadow: white 2px 2px 2px;
         }
     </style>
 	<style>/** CSS：記述スペース */
 		body {
 		    padding-top: 50px;
 		}
-	#contents {
-		display: none;
-	}
-        .footer {
-          bottom: 0;
-          width: 100%;
-          height: 0%;
-        }
+		.starter-template {
+		    padding: 40px 15px;
+		    text-align: center;
+		}
 		.mb1{
 			margin-bottom: 1em;
 		}
@@ -150,8 +145,8 @@
 		.mb5{
 			margin-bottom: 5em;
 		}
-		.select-center {
-			text-indent: 50%;
+		.margin-right {
+		  margin-right: 1em;
 		}
 	</style>
 </body>

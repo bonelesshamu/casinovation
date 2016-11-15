@@ -16001,3 +16001,81 @@ Processing by Staff::TopController#home as HTML
 user_id: 45
   [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 45]]
 #<StaffMember id: 45, name: "しげ2", coin: 50, prize1_bet: nil, prize1_winner: false, prize2_bet: nil, prize2_winner: false, prize3_bet: nil, prize3_winner: false, prize4_bet: nil, prize4_winner: false, prize5_bet: nil, prize5_winner: false, prize_bet_flag: false>
+  Rendered staff/top/home.html within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/staff/home" for 27.87.41.29 at 2016-11-15 14:32:51 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#home as HTML
+user_id: 44
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 44]]
+#<StaffMember id: 44, name: "kurihara", coin: 42, prize1_bet: nil, prize1_winner: false, prize2_bet: nil, prize2_winner: false, prize3_bet: nil, prize3_winner: false, prize4_bet: nil, prize4_winner: false, prize5_bet: nil, prize5_winner: false, prize_bet_flag: false>
+  Rendered staff/top/home.html within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/staff/bet_question2" for 27.87.41.29 at 2016-11-15 14:32:53 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question2 as HTML
+user_id: 44
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 44]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara"], ["question", "question2"]]
+  Rendered staff/top/bet_question2.html within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-15 14:32:56 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+  Parameters: {"question_id"=>"question2", "option"=>"option1", "bet"=>"40"}
+Can't verify CSRF token authenticity
+user_id: 
+  [1m[35mStaffMember Load (0.2ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/staff/top_controller.rb:239:in `bet_question_result2'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.4ms)
+
+
+Started POST "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-15 14:33:46 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+  Parameters: {"question_id"=>"question2", "option"=>"option1", "bet"=>"40"}
+Can't verify CSRF token authenticity
+user_id: 
+  [1m[36mStaffMember Load (0.2ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/staff/top_controller.rb:239:in `bet_question_result2'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.9ms)
+
+
+Started GET "/staff/bet_question2" for 150.70.173.56 at 2016-11-15 14:34:25 +0000
+Cannot render console from 150.70.173.56! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question2 as */*
+user_id: 
+  [1m[35mStaffMember Load (0.2ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/staff/top_controller.rb:146:in `bet_question2'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.9ms)
+Exiting

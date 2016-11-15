@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 class Staff::TopController < ApplicationController
-  protect_from_forgery :except => [:login_result, :bet_prize_result, :bet_question_result]
+  protect_from_forgery :except => [:login_result, :bet_prize_result, :bet_question_result1, :bet_question_result2, :bet_question_result3, :bet_question_result4, :bet_question_result5]
   
   def index
     render action: 'login'
@@ -135,7 +135,8 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      render action: "bet_question_result"
+      @already_shown_question1_flag = QuestionResult.find(1).already_shown_question1_flag
+      render action: "bet_question_result1"
     end
   end
 
@@ -151,7 +152,8 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      render action: "bet_question_result"
+      @already_shown_question2_flag = QuestionResult.find(1).already_shown_question2_flag
+      render action: "bet_question_result2"
     end
   end
 
@@ -167,7 +169,8 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      render action: "bet_question_result"
+      @already_shown_question3_flag = QuestionResult.find(1).already_shown_question3_flag
+      render action: "bet_question_result3"
     end
   end
 
@@ -183,7 +186,8 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      render action: "bet_question_result"
+      @already_shown_question4_flag = QuestionResult.find(1).already_shown_question4_flag
+      render action: "bet_question_result4"
     end
   end
 
@@ -199,7 +203,8 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      render action: "bet_question_result"
+      @already_shown_question5_flag = QuestionResult.find(1).already_shown_question5_flag
+      render action: "bet_question_result5"
     end
   end
 
@@ -229,6 +234,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
+    @already_shown_question1_flag = QuestionResult.find(1).already_shown_question1_flag
     render action: "bet_question_result1"
   end
 
@@ -258,6 +264,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
+    @already_shown_question2_flag = QuestionResult.find(1).already_shown_question2_flag
     render action: "bet_question_result2"
   end
 
@@ -287,6 +294,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
+    @already_shown_question3_flag = QuestionResult.find(1).already_shown_question3_flag
     render action: "bet_question_result3"
   end
 
@@ -316,6 +324,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
+    @already_shown_question4_flag = QuestionResult.find(1).already_shown_question4_flag
     render action: "bet_question_result4"
   end
 
@@ -345,6 +354,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
+    @already_shown_question5_flag = QuestionResult.find(1).already_shown_question5_flag
     render action: "bet_question_result5"
   end
 

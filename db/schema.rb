@@ -11,11 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161106145304) do
+ActiveRecord::Schema.define(version: 20161115145247) do
 
   create_table "operator_members", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "question_results", force: :cascade do |t|
+    t.boolean "already_shown_question1_flag", default: false
+    t.boolean "already_shown_question2_flag", default: false
+    t.boolean "already_shown_question3_flag", default: false
+    t.boolean "already_shown_question4_flag", default: false
+    t.boolean "already_shown_question5_flag", default: false
   end
 
   create_table "staff_member_options", force: :cascade do |t|
