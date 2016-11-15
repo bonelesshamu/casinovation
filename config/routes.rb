@@ -15,7 +15,11 @@ Rails.application.routes.draw do
     get 'bet_question3' => 'top#bet_question3'
     get 'bet_question4' => 'top#bet_question4'
     get 'bet_question5' => 'top#bet_question5'
-    post 'bet_question_result' => 'top#bet_question_result'
+    post 'bet_question_result1' => 'top#bet_question_result1'
+    post 'bet_question_result2' => 'top#bet_question_result2'
+    post 'bet_question_result3' => 'top#bet_question_result3'
+    post 'bet_question_result4' => 'top#bet_question_result4'
+    post 'bet_question_result5' => 'top#bet_question_result5'
 #    delete 'session' => 'sessions#destroy'
   end
   

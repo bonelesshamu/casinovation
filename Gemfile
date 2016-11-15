@@ -48,5 +48,6 @@ group :development do
   gem 'websocket-rails'
   gem 'openassets-ruby'
 
+  gem 'jquery-turbolinks'
 end
 
