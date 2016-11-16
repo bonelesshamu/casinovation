@@ -24,11 +24,11 @@ ttt
 staff_names.length.times do |n|
   StaffMember.create( :name => staff_names[n],
                       :coin => 0,
-                      :prize1_bet => rand(1..10)*1000,
-                      :prize2_bet => rand(1..10)*1000,
-                      :prize3_bet => rand(1..10)*1000,
-                      :prize4_bet => rand(1..10)*1000,
-                      :prize5_bet => rand(1..10)*1000,
+                      :prize1_bet => rand(1..10)*10,
+                      :prize2_bet => rand(1..10)*10,
+                      :prize3_bet => rand(1..10)*10,
+                      :prize4_bet => rand(1..10)*10,
+                      :prize5_bet => rand(1..10)*10,
                       :prize_bet_flag => true
                       )
 end
@@ -53,6 +53,6 @@ option_names = %w{
   StaffMemberOption.create( :name => staff_names[n/5],
                             :question => question_names[n%question_names.length],
                             :option => option_names[(n/option_names.length)%option_names.length],
-                            :bet => 500
+                            :bet => 10
                             )
 end

@@ -25,7 +25,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body ="contents">
     <nav class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <div class="navbar-header">
@@ -96,12 +96,21 @@
     <%= javascript_include_tag 'common' %>
     <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>
     <script>/** JS：記述スペース */
+                $(document).on('turbolinks:request-start', function() {
+                        $('#contents').css('display', 'none');
+                });
+                $(document).on('turbolinks:load', function() {
+                        $('#contents').fadeIn(100);    
+                });
 		$(function(){
 		});
     </script>
     <style>/** CSS：記述スペース */
         .slider {
         width: 100% !important;
+        }
+        #contents {
+                display: none;
         }
         .footer {
           bottom: 0;

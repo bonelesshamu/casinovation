@@ -19,11 +19,11 @@ ActiveRecord::Schema.define(version: 20161115145247) do
   end
 
   create_table "question_results", force: :cascade do |t|
-    t.boolean "already_shown_question1_flag", default: false
-    t.boolean "already_shown_question2_flag", default: false
-    t.boolean "already_shown_question3_flag", default: false
-    t.boolean "already_shown_question4_flag", default: false
-    t.boolean "already_shown_question5_flag", default: false
+    t.integer "answer1", default: 0
+    t.integer "answer2", default: 0
+    t.integer "answer3", default: 0
+    t.integer "answer4", default: 0
+    t.integer "answer5", default: 0
   end
 
   create_table "staff_member_options", force: :cascade do |t|

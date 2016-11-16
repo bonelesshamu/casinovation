@@ -9,7 +9,8 @@ class Staff::TopController < ApplicationController
   def login
     @user_id = session[:user_id]
     p @user_id
-    if @user_id
+    currentStaffMember = StaffMember.find_by(id: @user_id)
+    if @user_id && currentStaffMember
       home
     else
       render action: 'login'
@@ -135,7 +136,7 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      @already_shown_question1_flag = QuestionResult.find(1).already_shown_question1_flag
+      @answer1 = QuestionResult.find(1).answer1
       render action: "bet_question_result1"
     end
   end
@@ -152,7 +153,7 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      @already_shown_question2_flag = QuestionResult.find(1).already_shown_question2_flag
+      @answer2 = QuestionResult.find(1).answer2
       render action: "bet_question_result2"
     end
   end
@@ -169,7 +170,7 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      @already_shown_question3_flag = QuestionResult.find(1).already_shown_question3_flag
+      @answer3 = QuestionResult.find(1).answer3
       render action: "bet_question_result3"
     end
   end
@@ -186,7 +187,7 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      @already_shown_question4_flag = QuestionResult.find(1).already_shown_question4_flag
+      @answer4 = QuestionResult.find(1).answer4
       render action: "bet_question_result4"
     end
   end
@@ -203,7 +204,7 @@ class Staff::TopController < ApplicationController
     else
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
-      @already_shown_question5_flag = QuestionResult.find(1).already_shown_question5_flag
+      @answer5 = QuestionResult.find(1).answer5
       render action: "bet_question_result5"
     end
   end
@@ -214,7 +215,7 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
-    @question_id = params["question_id"]
+    @question_id = "question1"
     @option = params["option"]
     @bet = params["bet"]
     currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: @question_id)
@@ -234,7 +235,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
-    @already_shown_question1_flag = QuestionResult.find(1).already_shown_question1_flag
+    @answer1 = QuestionResult.find(1).answer1
     render action: "bet_question_result1"
   end
 
@@ -244,7 +245,7 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
-    @question_id = params["question_id"]
+    @question_id = "question2"
     @option = params["option"]
     @bet = params["bet"]
     currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: @question_id)
@@ -264,7 +265,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
-    @already_shown_question2_flag = QuestionResult.find(1).already_shown_question2_flag
+    @answer2 = QuestionResult.find(1).answer2
     render action: "bet_question_result2"
   end
 
@@ -274,7 +275,7 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
-    @question_id = params["question_id"]
+    @question_id = "question3"
     @option = params["option"]
     @bet = params["bet"]
     currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: @question_id)
@@ -294,7 +295,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
-    @already_shown_question3_flag = QuestionResult.find(1).already_shown_question3_flag
+    @answer3 = QuestionResult.find(1).answer3
     render action: "bet_question_result3"
   end
 
@@ -304,7 +305,7 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
-    @question_id = params["question_id"]
+    @question_id = "question4"
     @option = params["option"]
     @bet = params["bet"]
     currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: @question_id)
@@ -324,7 +325,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
-    @already_shown_question4_flag = QuestionResult.find(1).already_shown_question4_flag
+    @answer4 = QuestionResult.find(1).answer4
     render action: "bet_question_result4"
   end
 
@@ -334,7 +335,7 @@ class Staff::TopController < ApplicationController
     currentStaffMember = StaffMember.find_by(id: @user_id)
     @name = currentStaffMember.name
     @coin = currentStaffMember.coin
-    @question_id = params["question_id"]
+    @question_id = "question5"
     @option = params["option"]
     @bet = params["bet"]
     currentStaffMemberOption = StaffMemberOption.find_by(name: @name, question: @question_id)
@@ -354,7 +355,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
     end
-    @already_shown_question5_flag = QuestionResult.find(1).already_shown_question5_flag
+    @answer5 = QuestionResult.find(1).answer5
     render action: "bet_question_result5"
   end
 

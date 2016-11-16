@@ -52,7 +52,7 @@ class Operator::TopController < ApplicationController
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question1")
     currentQuestionResult = QuestionResult.find_by(id: 1)
-    currentQuestionResult.already_shown_question1_flag = "true"
+    currentQuestionResult.answer1 = @answer.to_i
     currentQuestionResult.save
     p QuestionResult.find_by(id: 1)
     render action: 'question1_result'
@@ -64,8 +64,9 @@ class Operator::TopController < ApplicationController
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question2")
     currentQuestionResult = QuestionResult.find_by(id: 1)
-    currentQuestionResult.already_shown_question2_flag = true
+    currentQuestionResult.answer2 = @answer.to_i
     currentQuestionResult.save
+    p QuestionResult.find_by(id: 1)
     render action: 'question2_result'
   end
 
@@ -75,8 +76,9 @@ class Operator::TopController < ApplicationController
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question3")
     currentQuestionResult = QuestionResult.find_by(id: 1)
-    currentQuestionResult.already_shown_question3_flag = true
+    currentQuestionResult.answer3 = @answer.to_i
     currentQuestionResult.save
+    p QuestionResult.find_by(id: 1)
     render action: 'question3_result'
   end
 
@@ -86,8 +88,9 @@ class Operator::TopController < ApplicationController
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question4")
     currentQuestionResult = QuestionResult.find_by(id: 1)
-    currentQuestionResult.already_shown_question4_flag = true
+    currentQuestionResult.answer4 = @answer.to_i
     currentQuestionResult.save
+    p QuestionResult.find_by(id: 1)
     render action: 'question4_result'
   end
 
@@ -97,8 +100,9 @@ class Operator::TopController < ApplicationController
     @staffmemberoptiondatas = StaffMemberOption.all
     question_result( @answer, "question5")
     currentQuestionResult = QuestionResult.find_by(id: 1)
-    currentQuestionResult.already_shown_question5_flag = true
+    currentQuestionResult.answer5 = @answer.to_i
     currentQuestionResult.save
+    p QuestionResult.find_by(id: 1)
     render action: 'question5_result'
   end
 
@@ -199,11 +203,11 @@ class Operator::TopController < ApplicationController
 
   def flag_init
     currentQuestionResult = QuestionResult.find_by(id: 1)
-    currentQuestionResult.already_shown_question1_flag = false
-    currentQuestionResult.already_shown_question2_flag = false
-    currentQuestionResult.already_shown_question3_flag = false
-    currentQuestionResult.already_shown_question4_flag = false
-    currentQuestionResult.already_shown_question5_flag = false
+    currentQuestionResult.answer1 = 0
+    currentQuestionResult.answer2 = 0
+    currentQuestionResult.answer3 = 0
+    currentQuestionResult.answer4 = 0
+    currentQuestionResult.answer5 = 0
     currentQuestionResult.save
   end
 end

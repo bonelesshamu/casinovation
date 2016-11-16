@@ -1,9 +1,181 @@
-<h1>question4 bet</h1>
-<form action="bet_question_result4" method="post">
-<input type="hidden" name="question_id" value="question4">
-<input type="radio" name="option" value="1">回答１<br>
-<input type="radio" name="option" value="2">回答２<br>
-<input type="radio" name="option" value="3">回答３<br>
-<input type="radio" name="option" value="4">回答４<br>
-<input type="hidden" name="bet" value="40">
-<input type="submit" value="send">
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Casinovation</title>
+
+    <!-- Bootstrap core CSS -->
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" id="themesid">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/offcanvas/offcanvas.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.3.0/css/bootstrap-slider.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="contents">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="home">Casinovation</a>
+        </div>
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-9">
+          <div class="mb2"></div>
+          <div class="row mb1">
+              <div class="pull-right col-xs-12 col-lg-12">
+                  <span id="point" class="badge badge-info pull-right margin-right"><%= @coin %></span>
+                  <strong id="name" class="pull-right margin-right"><%= @name %> さん</strong>
+              </div>
+          </div>
+          <div class="jumbotron">
+            <h1>Q4:</h1>
+            <p id="question"></p>
+          </div>
+          
+          <div class="row">
+            <div class="col-xs-12 col-lg-12">
+			<form id="form" data-toggle="validator" role="form" method="post" action="bet_question_result4">
+				<div>
+					<p class="text-muted text-center">番号を選択してください。</p>
+				</div>
+				
+				<div>
+					<input type="hidden" name="question_id" value="question4">
+				</div>
+				
+				<div class="form-group">
+					<select class="form-control select-center has-feedback" id="option" name="option">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<div class="mb2"></div>
+					<p class="text-muted text-center">ベットするポイント数を選択してください。</p>
+				</div>
+
+				<div class="form-group">
+					<select class="form-control select-center has-feedback" id="bet" name="bet">
+					</select>
+				</div>
+				
+				<div class="form-group">
+					<div class="mb2"></div>
+					<button type="submit" class="btn btn-info btn-lg btn-block" id="decision" disabled>決定</button>
+				</div>
+			</form>
+			</div>
+          </div><!--/row-->
+        </div><!--/.col-xs-12.col-sm-9-->
+        
+      </div><!--/row-->
+
+
+
+      <footer class="footer">
+        <p>&copy; 2016 IT Innovation Dept.</p>
+      </footer>
+
+    </div><!--/.container-->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/examples/offcanvas/offcanvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.3.0/bootstrap-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    <%= javascript_include_tag 'common' %>
+    <script>/** JS：記述スペース */
+                $(document).on('turbolinks:request-start', function() {
+                        $('#contents').css('display', 'none');
+                });
+                $(document).on('turbolinks:load', function() {
+                        $('#contents').fadeIn(100);    
+                });
+		$(function(){
+			var characters = [];
+			var maxpoint = $('#point').text();
+			for(var i=0; i<=maxpoint; i++) {
+				characters.push(i);
+			}
+			
+			var $select = $('#bet');
+			var $option,
+				options,
+				isSelected;
+			    
+			// コールバック関数の引数の順序が $.each と異なることに注意。
+			options = $.map(characters, function (value) {
+				isSelected = (value === 0);
+				$option = $('<option>', { value: value, text: value, selected: isSelected });
+				return $option;
+			});
+			$select.append(options);
+			
+			$select.change(function() {
+				var str = $(this).val();
+				if(str == 0) {
+					display.hideDecision();
+				} else {
+					display.showDecision();
+				}
+			});
+		});
+    </script>
+    <style>/** CSS：記述スペース */
+        .slider {
+        width: 100% !important;
+        }
+        .margin-right {
+          margin-right: 1em;
+        }
+    </style>
+	<style>/** CSS：記述スペース */
+		body {
+		    padding-top: 50px;
+		}
+	#contents {
+		display: none;
+	}
+        .footer {
+          bottom: 0;
+          width: 100%;
+          height: 0%;
+        }
+		.mb1{
+			margin-bottom: 1em;
+		}
+		.mb2{
+			margin-bottom: 2em;
+		}
+		.mb5{
+			margin-bottom: 5em;
+		}
+		.select-center {
+			text-indent: 50%;
+		}
+	</style>
+</body>
+</html>
