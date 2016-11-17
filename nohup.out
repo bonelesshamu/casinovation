@@ -16779,3 +16779,982 @@ Processing by Operator::TopController#question1_result as HTML
   Rendered operator/top/question1_result.html within layouts/application (16.9ms)
 Completed 200 OK in 86ms (Views: 36.7ms | ActiveRecord: 35.2ms)
 Exiting
+=> Booting Thin
+=> Rails 4.2.6 application starting in development on http://0.0.0.0:3000
+=> Run `rails server -h` for more startup options
+=> Ctrl-C to shutdown server
+Thin web server (v1.7.0 codename Dunder Mifflin)
+Maximum connections set to 1024
+Listening on 0.0.0.0:3000, CTRL+C to stop
+
+
+Started GET "/operator/question4_status" for 150.70.173.6 at 2016-11-16 14:05:14 +0000
+Cannot render console from 150.70.173.6! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Operator::TopController#question4_status as */*
+  [1m[35mStaffMember Load (0.3ms)[0m  SELECT "staff_members".* FROM "staff_members"
+  [1m[36mStaffMemberOption Load (0.2ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "aaa"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "bbb"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ccc"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ddd"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.2ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "eee"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "fff"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ggg"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "hhh"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "iii"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "jjj"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kkk"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "lll"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "mmm"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "nnn"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ooo"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ppp"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "qqq"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "rrr"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "sss"], ["question", "question4"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ttt"], ["question", "question4"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara"], ["question", "question4"]]
+  Rendered operator/top/question4_status.html within layouts/application (26.0ms)
+Completed 200 OK in 327ms (Views: 314.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/operator/flag_init" for 27.87.41.29 at 2016-11-16 14:05:41 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#flag_init as HTML
+  [1m[35mQuestionResult Load (0.1ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "question_results" SET "answer1" = ?, "answer2" = ?, "answer3" = ?, "answer4" = ? WHERE "question_results"."id" = ?  [["answer1", 0], ["answer2", 0], ["answer3", 0], ["answer4", 0], ["id", 1]]
+  [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+  Rendered operator/top/flag_init.html within layouts/application (1.3ms)
+Completed 200 OK in 107ms (Views: 81.3ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/staff/login" for 27.87.41.29 at 2016-11-16 14:09:02 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#login as HTML
+nil
+  [1m[35mStaffMember Load (1.4ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1
+  Rendered staff/top/login.html within layouts/application (7.8ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/staff/login" for 27.87.41.29 at 2016-11-16 14:09:05 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#login_result as HTML
+  Parameters: {"name"=>"kurihara2"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "staff_members" ("name", "coin") VALUES (?, ?)  [["name", "kurihara2"], ["coin", 50]]
+  [1m[36m (6.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mStaffMember Load (0.2ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 22]]
+#<StaffMember id: 22, name: "kurihara2", coin: 50, prize1_bet: nil, prize1_winner: false, prize2_bet: nil, prize2_winner: false, prize3_bet: nil, prize3_winner: false, prize4_bet: nil, prize4_winner: false, prize5_bet: nil, prize5_winner: false, prize_bet_flag: false>
+  Rendered staff/top/home.html within layouts/application (3.2ms)
+Completed 200 OK in 42ms (Views: 32.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/staff/bet_question2" for 27.87.41.29 at 2016-11-16 14:09:09 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question2 as HTML
+user_id: 22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara2"], ["question", "question2"]]
+  Rendered staff/top/bet_question2.html within layouts/application (9.9ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-16 14:09:14 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+  Parameters: {"question_id"=>"question2", "option"=>"3", "bet"=>"15"}
+user_id: 22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara2"], ["question", "question2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?  [["coin", 35], ["id", 22]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "staff_member_options" ("name", "question", "option", "bet") VALUES (?, ?, ?, ?)[0m  [["name", "kurihara2"], ["question", "question2"], ["option", "3"], ["bet", 15]]
+  [1m[35m (4.7ms)[0m  commit transaction
+#<StaffMemberOption id: 104, name: "kurihara2", question: "question2", option: "3", bet: 15, correct: false>
+  [1m[36mQuestionResult Load (0.1ms)[0m  [1mSELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered staff/top/bet_question_result2.html within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 22.9ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/operator/index" for 27.87.41.29 at 2016-11-16 14:09:21 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#index as HTML
+  [1m[35mQuestionResult Load (0.2ms)[0m  SELECT "question_results".* FROM "question_results"
+#<ActiveRecord::Relation [#<QuestionResult id: 1, answer1: 0, answer2: 0, answer3: 0, answer4: 0, answer5: 0>]>
+  Rendered operator/top/index.html within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/operator/question2_status" for 27.87.41.29 at 2016-11-16 14:09:28 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#question2_status as HTML
+  [1m[36mStaffMember Load (0.3ms)[0m  [1mSELECT "staff_members".* FROM "staff_members"[0m
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "aaa"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "bbb"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ccc"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ddd"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "eee"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "fff"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ggg"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "hhh"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "iii"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "jjj"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kkk"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "lll"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "mmm"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "nnn"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ooo"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ppp"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "qqq"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "rrr"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "sss"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ttt"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara2"], ["question", "question2"]]
+  Rendered operator/top/question2_status.html within layouts/application (10.7ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/operator/question2_result" for 27.87.41.29 at 2016-11-16 14:09:31 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#question2_result as HTML
+  Parameters: {"answer"=>"1"}
+  [1m[35mStaffMember Load (0.3ms)[0m  SELECT "staff_members".* FROM "staff_members"
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "aaa"], ["question", "question2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 100], ["id", 1]]
+  [1m[35m (7.8ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "bbb"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ccc"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ddd"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "eee"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "fff"], ["question", "question2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 100], ["id", 6]]
+  [1m[35m (5.8ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ggg"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "hhh"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "iii"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "jjj"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kkk"], ["question", "question2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 100], ["id", 11]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "lll"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "mmm"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "nnn"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ooo"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ppp"], ["question", "question2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 100], ["id", 16]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "qqq"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "rrr"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "sss"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ttt"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara"], ["question", "question2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 86], ["id", 21]]
+  [1m[35m (4.9ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara2"], ["question", "question2"]]
+  [1m[35mQuestionResult Load (0.0ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "question_results" SET "answer2" = ? WHERE "question_results"."id" = ?  [["answer2", 1], ["id", 1]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mQuestionResult Load (0.1ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+#<QuestionResult id: 1, answer1: 0, answer2: 1, answer3: 0, answer4: 0, answer5: 0>
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "aaa"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "bbb"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "ccc"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "ddd"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "eee"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "fff"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "ggg"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "hhh"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "iii"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "jjj"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "kkk"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "lll"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "mmm"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "nnn"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "ooo"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "ppp"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "qqq"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "rrr"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "sss"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "ttt"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "kurihara"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "kurihara2"], ["question", "question2"], ["option", "1"]]
+  Rendered operator/top/question2_result.html within layouts/application (8.9ms)
+Completed 200 OK in 82ms (Views: 29.6ms | ActiveRecord: 38.1ms)
+
+
+Started GET "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-16 14:09:33 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+user_id: 22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara2"], ["question", "question2"]]
+already betted
+  [1m[36mQuestionResult Load (0.0ms)[0m  [1mSELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered staff/top/bet_question_result2.html within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1&_=1479381219657" for 153.237.154.35 at 2016-11-17 11:13:35 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1&_=1479381219658" for 153.237.154.35 at 2016-11-17 11:13:47 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1&_=1479381219659" for 153.237.154.35 at 2016-11-17 11:13:49 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1479381219660" for 153.237.154.35 at 2016-11-17 11:13:54 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/common.self-01d155576b9b9a76773646b9890cf5291c594ea5862e7b3ae4c46ebf97985b40.js?body=1&_=1479381219661" for 153.237.154.35 at 2016-11-17 11:14:01 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.blockUI.self-278c5fb8a92daa6500124a3a2dcfc48c0e1b22e52ece243d646df4813e069cf5.js?body=1&_=1479381219662" for 153.237.154.35 at 2016-11-17 11:14:06 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1479381219663" for 153.237.154.35 at 2016-11-17 11:14:08 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1479381219664" for 153.237.154.35 at 2016-11-17 11:14:09 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1&_=1479381219665" for 153.237.154.35 at 2016-11-17 11:14:10 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1&_=1479381219666" for 153.237.154.35 at 2016-11-17 11:14:10 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1&_=1479381219667" for 153.237.154.35 at 2016-11-17 11:14:11 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1&_=1479381219668" for 153.237.154.35 at 2016-11-17 11:14:11 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1&_=1479381219669" for 153.237.154.35 at 2016-11-17 11:14:12 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1&_=1479381219670" for 153.237.154.35 at 2016-11-17 11:14:15 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1&_=1479381219671" for 153.237.154.35 at 2016-11-17 11:14:15 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1&_=1479381219672" for 153.237.154.35 at 2016-11-17 11:14:15 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1&_=1479381219673" for 153.237.154.35 at 2016-11-17 11:14:15 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1&_=1479381219674" for 153.237.154.35 at 2016-11-17 11:14:26 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1&_=1479381219675" for 153.237.154.35 at 2016-11-17 11:14:27 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/admin/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1479381219676" for 153.237.154.35 at 2016-11-17 11:14:28 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/common.self-01d155576b9b9a76773646b9890cf5291c594ea5862e7b3ae4c46ebf97985b40.js?body=1&_=1479381219677" for 153.237.154.35 at 2016-11-17 11:14:28 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.blockUI.self-278c5fb8a92daa6500124a3a2dcfc48c0e1b22e52ece243d646df4813e069cf5.js?body=1&_=1479381219678" for 153.237.154.35 at 2016-11-17 11:14:28 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/operator/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1479381219679" for 153.237.154.35 at 2016-11-17 11:14:29 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/staff/top.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1&_=1479381219680" for 153.237.154.35 at 2016-11-17 11:14:29 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_rails.self-b0fea3efa3fdd47f32cd4280ccc18488ffd7f2136c7c563c63c217044182fe1e.js?body=1&_=1479381219681" for 153.237.154.35 at 2016-11-17 11:14:29 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/event.self-04d5bb47819660cff48dbf6cc594435e5d0d1107d44470b0890165896fa90030.js?body=1&_=1479381219682" for 153.237.154.35 at 2016-11-17 11:14:30 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/abstract_connection.self-c59ade07c40033b31f560ae7c6681d3ecc9eca88006e020116d0e538bee3c632.js?body=1&_=1479381219683" for 153.237.154.35 at 2016-11-17 11:14:30 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/http_connection.self-8314b61f89b6ebcab2dbf126cbb99f4cf0feb5f417530abf373727b653eaf125.js?body=1&_=1479381219684" for 153.237.154.35 at 2016-11-17 11:14:31 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/websocket_connection.self-a4fd5d8dc295df9ccfa03dae5df35d9a8fd1c54f21afc3c9cef931eff8a980e3.js?body=1&_=1479381219685" for 153.237.154.35 at 2016-11-17 11:14:31 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/channel.self-51e0b70af4cf956496d3b5ea4b739ec4cc25f979f3eff7abe53a8b4065643e6b.js?body=1&_=1479381219686" for 153.237.154.35 at 2016-11-17 11:14:31 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/websocket_rails/main.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1&_=1479381219687" for 153.237.154.35 at 2016-11-17 11:14:32 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1&_=1479381219688" for 153.237.154.35 at 2016-11-17 11:14:32 +0000
+Cannot render console from 153.237.154.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/staff/home" for 27.87.41.29 at 2016-11-17 12:53:26 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#home as HTML
+user_id: 22
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 22]]
+#<StaffMember id: 22, name: "kurihara2", coin: 35, prize1_bet: nil, prize1_winner: false, prize2_bet: nil, prize2_winner: false, prize3_bet: nil, prize3_winner: false, prize4_bet: nil, prize4_winner: false, prize5_bet: nil, prize5_winner: false, prize_bet_flag: false>
+  Rendered staff/top/home.html within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 28.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/staff/bet_question2" for 27.87.41.29 at 2016-11-17 12:53:29 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question2 as HTML
+user_id: 22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+  [1m[35mStaffMemberOption Load (0.2ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara2"], ["question", "question2"]]
+  [1m[36mQuestionResult Load (0.1ms)[0m  [1mSELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered staff/top/bet_question_result2.html within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 21.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/staff/home" for 27.87.41.29 at 2016-11-17 12:53:35 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#home as HTML
+user_id: 22
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 22]]
+#<StaffMember id: 22, name: "kurihara2", coin: 35, prize1_bet: nil, prize1_winner: false, prize2_bet: nil, prize2_winner: false, prize3_bet: nil, prize3_winner: false, prize4_bet: nil, prize4_winner: false, prize5_bet: nil, prize5_winner: false, prize_bet_flag: false>
+  Rendered staff/top/home.html within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/staff/login" for 27.87.41.29 at 2016-11-17 12:53:46 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#login as HTML
+22
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 22]]
+user_id: 22
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 22]]
+#<StaffMember id: 22, name: "kurihara2", coin: 35, prize1_bet: nil, prize1_winner: false, prize2_bet: nil, prize2_winner: false, prize3_bet: nil, prize3_winner: false, prize4_bet: nil, prize4_winner: false, prize5_bet: nil, prize5_winner: false, prize_bet_flag: false>
+  Rendered staff/top/home.html within layouts/application (1.5ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/staff/login" for 27.87.41.29 at 2016-11-17 12:54:35 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#login as HTML
+nil
+  [1m[36mStaffMember Load (0.2ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1[0m
+  Rendered staff/top/login.html within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/staff/login" for 27.87.41.29 at 2016-11-17 12:54:38 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#login_result as HTML
+  Parameters: {"name"=>"kurihara3"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "staff_members" ("name", "coin") VALUES (?, ?)[0m  [["name", "kurihara3"], ["coin", 50]]
+  [1m[35m (6.2ms)[0m  commit transaction
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 23]]
+#<StaffMember id: 23, name: "kurihara3", coin: 50, prize1_bet: nil, prize1_winner: false, prize2_bet: nil, prize2_winner: false, prize3_bet: nil, prize3_winner: false, prize4_bet: nil, prize4_winner: false, prize5_bet: nil, prize5_winner: false, prize_bet_flag: false>
+  Rendered staff/top/home.html within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 24.2ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/staff/bet_question2" for 27.87.41.29 at 2016-11-17 12:54:40 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question2 as HTML
+user_id: 23
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara3"], ["question", "question2"]]
+  Rendered staff/top/bet_question2.html within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/operator/flag_init" for 27.87.41.29 at 2016-11-17 12:54:53 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#flag_init as HTML
+  [1m[35mQuestionResult Load (0.1ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "question_results" SET "answer2" = ? WHERE "question_results"."id" = ?  [["answer2", 0], ["id", 1]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+  Rendered operator/top/flag_init.html within layouts/application (0.0ms)
+Completed 200 OK in 32ms (Views: 23.4ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/operator/question2_result" for 27.87.41.29 at 2016-11-17 12:54:57 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/operator/question2_result"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.5) lib/faye/adapters/thin.rb:41:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.5) lib/faye/adapters/thin.rb:46:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.5) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.5) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.9ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.9ms)
+
+
+Started POST "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:55:04 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+  Parameters: {"question_id"=>"question2", "option"=>"4", "bet"=>"13"}
+user_id: 23
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara3"], ["question", "question2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 37], ["id", 23]]
+  [1m[35m (5.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "staff_member_options" ("name", "question", "option", "bet") VALUES (?, ?, ?, ?)  [["name", "kurihara3"], ["question", "question2"], ["option", "4"], ["bet", 13]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+#<StaffMemberOption id: 105, name: "kurihara3", question: "question2", option: "4", bet: 13, correct: false>
+  [1m[35mQuestionResult Load (0.1ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 20.2ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/staff/home" for 150.70.173.51 at 2016-11-17 12:55:15 +0000
+Cannot render console from 150.70.173.51! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#home as */*
+user_id: 
+  [1m[36mStaffMember Load (0.2ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/staff/top_controller.rb:58:in `home'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.2ms)
+
+
+Started GET "/staff/bet_question2" for 150.70.173.43 at 2016-11-17 12:55:17 +0000
+Cannot render console from 150.70.173.43! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question2 as */*
+user_id: 
+  [1m[35mStaffMember Load (0.3ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `name' for nil:NilClass):
+  app/controllers/staff/top_controller.rb:148:in `bet_question2'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.5ms)
+
+
+Started GET "/staff/login" for 150.70.173.41 at 2016-11-17 12:55:44 +0000
+Cannot render console from 150.70.173.41! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#login as */*
+nil
+  [1m[36mStaffMember Load (0.2ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1[0m
+  Rendered staff/top/login.html within layouts/application (2.0ms)
+Completed 200 OK in 24ms (Views: 22.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:55:55 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+user_id: 23
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara3"], ["question", "question2"]]
+already betted
+  [1m[35mQuestionResult Load (0.0ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:55:56 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+user_id: 23
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 23]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara3"], ["question", "question2"]]
+already betted
+  [1m[36mQuestionResult Load (0.1ms)[0m  [1mSELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1[0m  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/operator/flag_init" for 150.70.173.52 at 2016-11-17 12:56:15 +0000
+Cannot render console from 150.70.173.52! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#flag_init as */*
+  [1m[35mQuestionResult Load (0.1ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  Rendered operator/top/flag_init.html within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:56:17 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+user_id: 23
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 23]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara3"], ["question", "question2"]]
+already betted
+  [1m[36mQuestionResult Load (0.1ms)[0m  [1mSELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1[0m  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/operator/question2_result" for 150.70.173.41 at 2016-11-17 12:56:18 +0000
+Cannot render console from 150.70.173.41! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+ActionController::RoutingError (No route matches [GET] "/operator/question2_result"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  thin (1.7.0) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.7.0) lib/thin/connection.rb:84:in `catch'
+  thin (1.7.0) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.7.0) lib/thin/connection.rb:53:in `process'
+  faye-websocket (0.10.5) lib/faye/adapters/thin.rb:41:in `process'
+  thin (1.7.0) lib/thin/connection.rb:39:in `receive_data'
+  faye-websocket (0.10.5) lib/faye/adapters/thin.rb:46:in `receive_data'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run_machine'
+  eventmachine (1.2.0.1) lib/eventmachine.rb:194:in `run'
+  thin (1.7.0) lib/thin/backends/base.rb:73:in `start'
+  thin (1.7.0) lib/thin/server.rb:162:in `start'
+  rack (1.6.5) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.5) lib/rack/server.rb:286:in `start'
+  railties (4.2.6) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.6) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.6) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:9:in `require'
+  bin/rails:9:in `<top (required)>'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `load'
+  spring (2.0.0) lib/spring/client/rails.rb:28:in `call'
+  spring (2.0.0) lib/spring/client/command.rb:7:in `call'
+  spring (2.0.0) lib/spring/client.rb:30:in `run'
+  spring (2.0.0) bin/spring:49:in `<top (required)>'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `load'
+  spring (2.0.0) lib/spring/binstub.rb:31:in `<top (required)>'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/2.2.0/rubygems/core_ext/kernel_require.rb:69:in `require'
+  bin/spring:14:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/ubuntu/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.5ms)
+
+
+Started GET "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:56:20 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+user_id: 23
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara3"], ["question", "question2"]]
+already betted
+  [1m[35mQuestionResult Load (0.0ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/operator/question2_result" for 27.87.41.29 at 2016-11-17 12:56:26 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#question2_result as HTML
+  Parameters: {"answer"=>"1"}
+  [1m[36mStaffMember Load (0.3ms)[0m  [1mSELECT "staff_members".* FROM "staff_members"[0m
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "aaa"], ["question", "question2"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?  [["coin", 120], ["id", 1]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "bbb"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ccc"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ddd"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "eee"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "fff"], ["question", "question2"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?  [["coin", 120], ["id", 6]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ggg"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "hhh"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "iii"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "jjj"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kkk"], ["question", "question2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?  [["coin", 120], ["id", 11]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "lll"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "mmm"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "nnn"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ooo"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ppp"], ["question", "question2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?  [["coin", 120], ["id", 16]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "qqq"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "rrr"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "sss"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ttt"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara"], ["question", "question2"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?  [["coin", 118], ["id", 21]]
+  [1m[36m (4.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara2"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara3"], ["question", "question2"]]
+  [1m[35mQuestionResult Load (0.0ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "question_results" SET "answer2" = ? WHERE "question_results"."id" = ?  [["answer2", 1], ["id", 1]]
+  [1m[36m (6.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mQuestionResult Load (0.0ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+#<QuestionResult id: 1, answer1: 0, answer2: 1, answer3: 0, answer4: 0, answer5: 0>
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "aaa"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "bbb"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "ccc"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "ddd"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "eee"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "fff"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "ggg"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "hhh"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "iii"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "jjj"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "kkk"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "lll"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "mmm"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "nnn"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "ooo"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "ppp"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "qqq"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "rrr"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "sss"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "ttt"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "kurihara"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "kurihara2"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "kurihara3"], ["question", "question2"], ["option", "1"]]
+  Rendered operator/top/question2_result.html within layouts/application (8.1ms)
+Completed 200 OK in 81ms (Views: 28.8ms | ActiveRecord: 39.4ms)
+
+
+Started GET "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:56:29 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+user_id: 23
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 23]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara3"], ["question", "question2"]]
+already betted
+  [1m[35mQuestionResult Load (0.0ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/staff/home" for 27.87.41.29 at 2016-11-17 12:56:33 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#home as HTML
+user_id: 23
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 23]]
+#<StaffMember id: 23, name: "kurihara3", coin: 37, prize1_bet: nil, prize1_winner: false, prize2_bet: nil, prize2_winner: false, prize3_bet: nil, prize3_winner: false, prize4_bet: nil, prize4_winner: false, prize5_bet: nil, prize5_winner: false, prize_bet_flag: false>
+  Rendered staff/top/home.html within layouts/application (1.6ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/operator/flag_init" for 27.87.41.29 at 2016-11-17 12:56:46 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#flag_init as HTML
+  [1m[35mQuestionResult Load (0.1ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "question_results" SET "answer2" = ? WHERE "question_results"."id" = ?  [["answer2", 0], ["id", 1]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+  Rendered operator/top/flag_init.html within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 22.5ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/staff/login" for 27.87.41.29 at 2016-11-17 12:57:13 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#login as HTML
+nil
+  [1m[35mStaffMember Load (0.2ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" IS NULL LIMIT 1
+  Rendered staff/top/login.html within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/staff/login" for 27.87.41.29 at 2016-11-17 12:57:23 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#login_result as HTML
+  Parameters: {"name"=>"kurihara5"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "staff_members" ("name", "coin") VALUES (?, ?)  [["name", "kurihara5"], ["coin", 50]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 24]]
+#<StaffMember id: 24, name: "kurihara5", coin: 50, prize1_bet: nil, prize1_winner: false, prize2_bet: nil, prize2_winner: false, prize3_bet: nil, prize3_winner: false, prize4_bet: nil, prize4_winner: false, prize5_bet: nil, prize5_winner: false, prize_bet_flag: false>
+  Rendered staff/top/home.html within layouts/application (1.6ms)
+Completed 200 OK in 31ms (Views: 22.7ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/staff/bet_question2" for 27.87.41.29 at 2016-11-17 12:57:24 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question2 as HTML
+user_id: 24
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 24]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara5"], ["question", "question2"]]
+  Rendered staff/top/bet_question2.html within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:57:28 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+  Parameters: {"question_id"=>"question2", "option"=>"1", "bet"=>"17"}
+user_id: 24
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 24]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara5"], ["question", "question2"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?  [["coin", 33], ["id", 24]]
+  [1m[36m (5.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "staff_member_options" ("name", "question", "option", "bet") VALUES (?, ?, ?, ?)[0m  [["name", "kurihara5"], ["question", "question2"], ["option", "1"], ["bet", 17]]
+  [1m[35m (5.9ms)[0m  commit transaction
+#<StaffMemberOption id: 106, name: "kurihara5", question: "question2", option: "1", bet: 17, correct: false>
+  [1m[36mQuestionResult Load (0.0ms)[0m  [1mSELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1[0m  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 22.2ms | ActiveRecord: 12.3ms)
+
+
+Started POST "/operator/question2_result" for 27.87.41.29 at 2016-11-17 12:57:34 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Operator::TopController#question2_result as HTML
+  Parameters: {"answer"=>"1"}
+  [1m[35mStaffMember Load (0.3ms)[0m  SELECT "staff_members".* FROM "staff_members"
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "aaa"], ["question", "question2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 140], ["id", 1]]
+  [1m[35m (6.1ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "bbb"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ccc"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ddd"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "eee"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "fff"], ["question", "question2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 140], ["id", 6]]
+  [1m[35m (5.8ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ggg"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "hhh"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "iii"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "jjj"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kkk"], ["question", "question2"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 140], ["id", 11]]
+  [1m[35m (9.6ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "lll"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "mmm"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "nnn"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ooo"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "ppp"], ["question", "question2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 140], ["id", 16]]
+  [1m[35m (6.0ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "qqq"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "rrr"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "sss"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "ttt"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara"], ["question", "question2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 150], ["id", 21]]
+  [1m[35m (4.8ms)[0m  commit transaction
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara2"], ["question", "question2"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara3"], ["question", "question2"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara5"], ["question", "question2"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "staff_members" SET "coin" = ? WHERE "staff_members"."id" = ?[0m  [["coin", 67], ["id", 24]]
+  [1m[35m (5.9ms)[0m  commit transaction
+  [1m[36mQuestionResult Load (0.1ms)[0m  [1mSELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "question_results" SET "answer2" = ? WHERE "question_results"."id" = ?[0m  [["answer2", 1], ["id", 1]]
+  [1m[35m (5.9ms)[0m  commit transaction
+  [1m[36mQuestionResult Load (0.0ms)[0m  [1mSELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1[0m  [["id", 1]]
+#<QuestionResult id: 1, answer1: 0, answer2: 1, answer3: 0, answer4: 0, answer5: 0>
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "aaa"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "bbb"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "ccc"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "ddd"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "eee"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "fff"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "ggg"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "hhh"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "iii"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "jjj"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "kkk"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "lll"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "mmm"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "nnn"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "ooo"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "ppp"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "qqq"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "rrr"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "sss"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "ttt"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "kurihara"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.0ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "kurihara2"], ["question", "question2"], ["option", "1"]]
+  [1m[35mStaffMemberOption Load (0.0ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1  [["name", "kurihara3"], ["question", "question2"], ["option", "1"]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? AND "staff_member_options"."option" = ? LIMIT 1[0m  [["name", "kurihara5"], ["question", "question2"], ["option", "1"]]
+  Rendered operator/top/question2_result.html within layouts/application (8.5ms)
+Completed 200 OK in 91ms (Views: 28.7ms | ActiveRecord: 48.1ms)
+
+
+Started GET "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:57:37 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+user_id: 24
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara5"], ["question", "question2"]]
+already betted
+  [1m[35mQuestionResult Load (0.0ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (1.6ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:58:12 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+user_id: 24
+  [1m[36mStaffMember Load (0.1ms)[0m  [1mSELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1[0m  [["id", 24]]
+  [1m[35mStaffMemberOption Load (0.1ms)[0m  SELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1  [["name", "kurihara5"], ["question", "question2"]]
+already betted
+  [1m[36mQuestionResult Load (0.0ms)[0m  [1mSELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1[0m  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (2.4ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/staff/bet_question_result2" for 27.87.41.29 at 2016-11-17 12:58:14 +0000
+Cannot render console from 27.87.41.29! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Staff::TopController#bet_question_result2 as HTML
+user_id: 24
+  [1m[35mStaffMember Load (0.1ms)[0m  SELECT  "staff_members".* FROM "staff_members" WHERE "staff_members"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mStaffMemberOption Load (0.1ms)[0m  [1mSELECT  "staff_member_options".* FROM "staff_member_options" WHERE "staff_member_options"."name" = ? AND "staff_member_options"."question" = ? LIMIT 1[0m  [["name", "kurihara5"], ["question", "question2"]]
+already betted
+  [1m[35mQuestionResult Load (0.0ms)[0m  SELECT  "question_results".* FROM "question_results" WHERE "question_results"."id" = ? LIMIT 1  [["id", 1]]
+false
+  Rendered staff/top/bet_question_result2.html within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.3ms)
+Waiting for 1 connection(s) to finish, can take up to 30 sec, CTRL+C to stop now
+Exiting

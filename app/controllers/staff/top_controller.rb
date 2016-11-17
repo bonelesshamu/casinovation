@@ -236,6 +236,7 @@ class Staff::TopController < ApplicationController
       @bet = currentStaffMemberOption.bet
     end
     @answer1 = QuestionResult.find(1).answer1
+    @is_correct = @answer1 == @option.to_i
     render action: "bet_question_result1"
   end
 
@@ -266,6 +267,8 @@ class Staff::TopController < ApplicationController
       @bet = currentStaffMemberOption.bet
     end
     @answer2 = QuestionResult.find(1).answer2
+    @is_correct = @answer2 == @option.to_i
+    p @is_correct
     render action: "bet_question_result2"
   end
 
@@ -296,6 +299,8 @@ class Staff::TopController < ApplicationController
       @bet = currentStaffMemberOption.bet
     end
     @answer3 = QuestionResult.find(1).answer3
+    @is_correct = @answer3 == @bet
+    p @is_correct
     render action: "bet_question_result3"
   end
 
@@ -326,6 +331,8 @@ class Staff::TopController < ApplicationController
       @bet = currentStaffMemberOption.bet
     end
     @answer4 = QuestionResult.find(1).answer4
+    @is_correct = @answer4 == @option.to_i
+    p @is_correct
     render action: "bet_question_result4"
   end
 
@@ -356,6 +363,8 @@ class Staff::TopController < ApplicationController
       @bet = currentStaffMemberOption.bet
     end
     @answer5 = QuestionResult.find(1).answer5
+    @is_correct = @answer5 == @option.to_i
+    p @is_correct
     render action: "bet_question_result5"
   end
 
