@@ -55,20 +55,26 @@
 
           <div class="mb1"></div>
 
+          <% if @answer1 == 0 %>
           <div class="alert alert-warning text-center" role="alert">
              <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
              解答をおまちください。
           </div>
+          <% end %>
 
+          <% if @answer1 != 0 && @is_correct == true %>
           <div class="alert alert-success text-center" role="alert">
              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
              正解！
           </div>
+          <% end %>
 
+          <% if @answer1 != 0 && @is_correct == false %>
           <div class="alert alert-danger text-center" role="alert">
              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
              不正解！
           </div>
+          <% end %>
 
           <div class="row">
             <div class="col-xs-12 col-lg-12">
@@ -100,7 +106,7 @@
                         $('#contents').css('display', 'none');
                 });
                 $(document).on('turbolinks:load', function() {
-                        $('#contents').fadeIn(100);    
+                        $('#contents').fadeIn(0);    
                 });
 		$(function(){
 		});

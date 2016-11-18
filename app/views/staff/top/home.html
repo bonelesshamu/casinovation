@@ -105,19 +105,12 @@
     <script src="https://cdn.mlkcca.com/v0.6.0/milkcocoa.js"></script>
     <%= javascript_include_tag 'common' %>
     <script>/** JS：記述スペース */
-		$(document).on('turbolinks:request-start', function() {
-			$('#contents').css('display', 'none');
-		});
-		$(document).on('turbolinks:load', function() {
-			$('#contents').fadeIn(100);	
-		});
-		$(function(){
-			$('#form').validator().on('submit', function(e) {
-				if (e.isDefaultPrevented()) {
-				} else {
-				}
-			});
-		});
+                $(document).on('turbolinks:request-start', function() {
+                        $('#contents').css('display', 'none');
+                });
+                $(document).on('turbolinks:load', function() {
+                        $('#contents').fadeIn(0);    
+                });
     </script>
     <style>/** CSS：記述スペース */
         .margin-right {

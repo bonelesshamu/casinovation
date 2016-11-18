@@ -137,6 +137,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
       @answer1 = QuestionResult.find(1).answer1
+      @is_correct = @answer1 == @option.to_i
       render action: "bet_question_result1"
     end
   end
@@ -154,6 +155,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
       @answer2 = QuestionResult.find(1).answer2
+      @is_correct = @answer1 == @option.to_i
       render action: "bet_question_result2"
     end
   end
@@ -171,6 +173,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
       @answer3 = QuestionResult.find(1).answer3
+      @is_correct = @answer1 == @option.to_i
       render action: "bet_question_result3"
     end
   end
@@ -188,6 +191,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
       @answer4 = QuestionResult.find(1).answer4
+      @is_correct = @answer1 == @option.to_i
       render action: "bet_question_result4"
     end
   end
@@ -205,6 +209,7 @@ class Staff::TopController < ApplicationController
       @option = currentStaffMemberOption.option
       @bet = currentStaffMemberOption.bet
       @answer5 = QuestionResult.find(1).answer5
+      @is_correct = @answer1 == @option.to_i
       render action: "bet_question_result5"
     end
   end
