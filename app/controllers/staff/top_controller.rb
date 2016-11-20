@@ -79,9 +79,24 @@ class Staff::TopController < ApplicationController
   def bet_prize
     @user_id = session[:user_id]
     currentStaffMember = StaffMember.find_by(id: @user_id)
-    @name = currentStaffMember.name
-    @coin = currentStaffMember.coin
-    render action: "bet_prize"
+    @already_bet = false
+    p currentStaffMember
+
+    if currentStaffMember && currentStaffMember.prize_bet_flag == true
+      @already_bet = true
+      @prize1_bet = currentStaffMember.prize1_bet
+      @prize2_bet = currentStaffMember.prize2_bet
+      @prize3_bet = currentStaffMember.prize3_bet
+      @prize4_bet = currentStaffMember.prize4_bet
+      @prize5_bet = currentStaffMember.prize5_bet
+      @name = currentStaffMember.name
+      @coin = currentStaffMember.coin
+      render action: "bet_prize_result"
+    else
+      @name = currentStaffMember.name
+      @coin = currentStaffMember.coin
+      render action: "bet_prize"
+    end
   end
 
   def bet_prize_result
