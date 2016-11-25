@@ -113,6 +113,8 @@ class Staff::TopController < ApplicationController
         @prize3_bet = currentStaffMember.prize3_bet
         @prize4_bet = currentStaffMember.prize4_bet
         @prize5_bet = currentStaffMember.prize5_bet
+        @name = currentStaffMember.name
+        @coin = currentStaffMember.coin
       else
         @prize1_bet = params["prize1"]
         currentStaffMember.prize1_bet = @prize1_bet.to_i
@@ -127,6 +129,8 @@ class Staff::TopController < ApplicationController
         currentStaffMember.prize_bet_flag = true
         currentStaffMember.coin = 0
         currentStaffMember.save
+        @name = currentStaffMember.name
+        @coin = currentStaffMember.coin
       end
     else
       @prize1_bet = "Error"

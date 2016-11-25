@@ -1,0 +1,30 @@
+<form method="get">
+    <button formaction="coin_status">皆さんのコイン状況を表示</button><br>
+    <button formaction="prize_status">皆さんの景品投票状況を表示</button><br><br><br>
+    <button formaction="question1_status">問題１の回答状況を表示</button><br>
+    <button formaction="question2_status">問題２の回答状況を表示</button><br>
+    <button formaction="question3_status">問題３の回答状況を表示</button><br>
+    <button formaction="question4_status">問題４の回答状況を表示</button><br>
+    <button formaction="question5_status">問題５の回答状況を表示</button><br><br><br>
+    <button formaction="prize1_status">景品１の投票状況を表示</button><br>
+    <button formaction="prize2_status">景品２の投票状況を表示</button><br>
+    <button formaction="prize3_status">景品３の投票状況を表示</button><br>
+    <button formaction="prize4_status">景品４の投票状況を表示</button><br>
+    <button formaction="prize5_status">景品５の投票状況を表示</button><br>
+</form>
+
+<!-- example of script accessing the data with json format
+<body>
+<br><br><br><br><br>
+<h1>javascriptアクセス例１: 景品ベットのjson</h1>
+<div id="container1"><p>hoge</p></div>
+<br><br>
+<h1>javascriptアクセス例２: 問題ベットのjson</h1>
+<div id="container2"><p>hoge</p></div>
+</body>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>
+$("#container1").load("staff_member");
+$("#container2").load("staff_member_option");
+</script>
+-->

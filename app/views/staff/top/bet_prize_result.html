@@ -1,12 +1,168 @@
-<h1>bet prize completed</h1>
-<h1>your id is <%= @user_id %></h1>
-<% if @already_bet %>
-<h1>already bet</h1>
-<% end %>
-<h1>your prize1 bet is "<%= @prize1_bet %>"</h1>
-<h1>your prize2 bet is "<%= @prize2_bet %>"</h1>
-<h1>your prize3 bet is "<%= @prize3_bet %>"</h1>
-<h1>your prize4 bet is "<%= @prize4_bet %>"</h1>
-<h1>your prize5 bet is "<%= @prize5_bet %>"</h1>
-<a href="home">"ホーム画面へ移動します"</a>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Casinovation</title>
+
+    <!-- Bootstrap core CSS -->
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" id="themesid">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/offcanvas/offcanvas.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.3.0/css/bootstrap-slider.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="contents">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="home">Casinovation</a>
+        </div>
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-9">
+          <div class="mb2"></div>
+          <div class="row mb1">
+              <div class="pull-right col-xs-12 col-lg-12">
+                  <strong id="name" class="pull-right margin-right"><%= @name %> さん</strong>
+              </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-lg-12">
+                        <form id="form" data-toggle="validator" role="form" method="post" action="bet_prize_result">
+                                <div>
+                                        <p class="text-muted text-center">景品抽選までお待ち下さい。</p>
+                                </div>
+                                
+                                <div class="col-xs-5 col-lg-5 text-center">
+                                	景品１
+                                </div>
+                                
+                                <div class="form-group col-xs-7 col-lg-7 text-center">
+                                        <span class="badge badge-info"><%= @prize1_bet %></span><span> コイン</span>
+                                </div>
+                                
+                                <div class="col-xs-5 col-lg-5 text-center">
+                                	景品２
+                                </div>
+                                
+                                <div class="form-group col-xs-7 col-lg-7 text-center">
+                                        <span class="badge badge-info"><%= @prize2_bet %></span><span> コイン</span>
+                                </div>
+                                
+                                <div class="col-xs-5 col-lg-5 text-center">
+                                	景品３
+                                </div>
+                                
+                                <div class="form-group col-xs-7 col-lg-7 text-center">
+                                        <span class="badge badge-info"><%= @prize3_bet %></span><span> コイン</span>
+                                </div>
+                                
+                                <div class="col-xs-5 col-lg-5 text-center">
+                                	景品４
+                                </div>
+                                
+                                <div class="form-group col-xs-7 col-lg-7 text-center">
+                                        <span class="badge badge-info"><%= @prize4_bet %></span><span> コイン</span>
+                                </div>
+                                
+                                <div class="col-xs-5 col-lg-5 text-center">
+                                	景品５
+                                </div>
+                                
+                                <div class="form-group col-xs-7 col-lg-7 text-center">
+                                        <span class="badge badge-info"><%= @prize5_bet %></span><span> コイン</span>
+                                </div>
+                        </form>
+                        </div>
+          </div><!--/row-->
+
+          <div class="row">
+            <div class="col-xs-12 col-lg-12">
+                <p><a class="btn btn-default btn-lg btn-block" href="home" role="button">Homeへ戻る</a></p>
+            </div>
+          </div>
+        </div><!--/.col-xs-12.col-sm-9-->
+        
+      </div><!--/row-->
+
+
+
+      <footer class="footer">
+        <p>&copy; 2016 IT Innovation Dept.</p>
+      </footer>
+
+    </div><!--/.container-->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/examples/offcanvas/offcanvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.3.0/bootstrap-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    <%= javascript_include_tag 'common' %>
+    <script>/** JS：記述スペース */
+                $(document).on('turbolinks:request-start', function() {
+                        $('#contents').css('display', 'none');
+                });
+                $(document).on('turbolinks:load', function() {
+                        $('#contents').fadeIn(100);    
+                });
+                $(function(){
+                });
+    </script>
+    <style>/** CSS：記述スペース */
+        .slider {
+        width: 100% !important;
+        }
+        .margin-right {
+          margin-right: 1em;
+        }
+    </style>
+        <style>/** CSS：記述スペース */
+                body {
+                    padding-top: 50px;
+                }
+		        #contents {
+		                display: none;
+		        }
+		        .footer {
+		          bottom: 0;
+		          width: 100%;
+		          height: 0%;
+		        }
+                .mb1{
+                        margin-bottom: 1em;
+                }
+                .mb2{
+                        margin-bottom: 2em;
+                }
+                .mb5{
+                        margin-bottom: 5em;
+                }
+                .select-center {
+                        text-indent: 50%;
+                }
+        </style>
+</body>
+</html>

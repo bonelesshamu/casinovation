@@ -1,30 +1,162 @@
-<form method="get">
-    <button formaction="coin_status">皆さんのコイン状況を表示</button><br>
-    <button formaction="prize_status">皆さんの景品投票状況を表示</button><br><br><br>
-    <button formaction="question1_status">問題１の回答状況を表示</button><br>
-    <button formaction="question2_status">問題２の回答状況を表示</button><br>
-    <button formaction="question3_status">問題３の回答状況を表示</button><br>
-    <button formaction="question4_status">問題４の回答状況を表示</button><br>
-    <button formaction="question5_status">問題５の回答状況を表示</button><br><br><br>
-    <button formaction="prize1_status">景品１の投票状況を表示</button><br>
-    <button formaction="prize2_status">景品２の投票状況を表示</button><br>
-    <button formaction="prize3_status">景品３の投票状況を表示</button><br>
-    <button formaction="prize4_status">景品４の投票状況を表示</button><br>
-    <button formaction="prize5_status">景品５の投票状況を表示</button><br>
-</form>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<!-- example of script accessing the data with json format
-<body>
-<br><br><br><br><br>
-<h1>javascriptアクセス例１: 景品ベットのjson</h1>
-<div id="container1"><p>hoge</p></div>
-<br><br>
-<h1>javascriptアクセス例２: 問題ベットのjson</h1>
-<div id="container2"><p>hoge</p></div>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+
+    <title>Casinovation</title>
+
+    <!-- Bootstrap core CSS -->
+   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" id="themesid">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/examples/offcanvas/offcanvas.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.3.0/css/bootstrap-slider.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="contents">
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index">Casinovation</a>
+        </div>
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-12 col-sm-9">
+
+          <div class="row">
+            <div class="col-xs-12 col-lg-12">
+	            <form id="form" data-toggle="validator" role="form" method="get">
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="coin_status" role="button">コイン状況</a>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="prize_status" role="button">景品投票状況</a>
+                    </div>
+                    
+                    <div class="col-xs-12 col-lg-12 mt2">
+                    	<span>問題の回答状況</span>
+                    </div>
+                    
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="question1_status" role="button">問題1</a>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="question2_status" role="button">問題2</a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="question3_status" role="button">問題3</a>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="question4_status" role="button">問題4</a>
+                    </div>
+
+                    <div class="col-xs-12 col-lg-12 mt2">
+                    	<span>景品の投票状況</span>
+                    </div>
+                    
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="prize1_status" role="button">景品1</a>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="prize2_status" role="button">景品2</a>
+                    </div>
+
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="prize3_status" role="button">景品3</a>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="prize4_status" role="button">景品4</a>
+                    </div>
+                    <div class="col-xs-6 col-lg-6 mt2">
+                    	<a class="btn btn-default btn-lg btn-block" href="prize5_status" role="button">景品5</a>
+                    </div>
+	            </form>
+            </div>
+          </div><!--/row-->
+
+        </div><!--/.col-xs-12.col-sm-9-->
+        
+      </div><!--/row-->
+
+
+
+      <footer class="footer">
+        <p>&copy; 2016 IT Innovation Dept.</p>
+      </footer>
+
+    </div><!--/.container-->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://getbootstrap.com/examples/offcanvas/offcanvas.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.3.0/bootstrap-slider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.min.js"></script>
+    <%= javascript_include_tag 'common' %>
+    <script>/** JS：記述スペース */
+                $(document).on('turbolinks:request-start', function() {
+                        $('#contents').css('display', 'none');
+                });
+                $(document).on('turbolinks:load', function() {
+                        $('#contents').fadeIn(100);    
+                });
+                $(function(){
+                });
+    </script>
+    <style>/** CSS：記述スペース */
+        .slider {
+        width: 100% !important;
+        }
+        .margin-right {
+          margin-right: 1em;
+        }
+    </style>
+        <style>/** CSS：記述スペース */
+                body {
+                    padding-top: 50px;
+                }
+		        #contents {
+		                display: none;
+		        }
+		        .footer {
+		          bottom: 0;
+		          width: 100%;
+		          height: 0%;
+		        }
+                .mb1{
+                        margin-bottom: 1em;
+                }
+                .mb2{
+                        margin-bottom: 2em;
+                }
+                .mb5{
+                        margin-bottom: 5em;
+                }
+                .mt2{
+                        margin-top: 2em;
+                }
+                .select-center {
+                        text-indent: 50%;
+                }
+        </style>
 </body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>
-$("#container1").load("staff_member");
-$("#container2").load("staff_member_option");
-</script>
--->
+</html>
