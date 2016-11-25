@@ -7,7 +7,7 @@ class Operator::TopController < ApplicationController
   end
 
   def coin_status
-    @staffmemberdatas = StaffMember.all
+    @staffmemberdatas = StaffMember.order("coin DESC")
     render action: 'coin_status'
   end
 
@@ -113,37 +113,38 @@ class Operator::TopController < ApplicationController
       correctUser = @staffmemberoptiondatas.find_by(name: data.name, question: question)
       if correctUser && correctUser.bet
         if correctUser.option && correctUser.option == answer
-          data.coin += 2 * correctUser.bet
+          data.coin += 5 * correctUser.bet + 5
           data.save
         else
-          #do nothing
+          data.coin += 5
+          data.save
         end
       end
     end
   end
 
   def prize1_status
-    @staffmemberdatas = StaffMember.all
+    @staffmemberdatas = StaffMember.order("prize1_bet DESC")
     render action: 'prize1_status'
   end
 
   def prize2_status
-    @staffmemberdatas = StaffMember.all
+    @staffmemberdatas = StaffMember.order("prize2_bet DESC")
     render action: 'prize2_status'
   end
 
   def prize3_status
-    @staffmemberdatas = StaffMember.all
+    @staffmemberdatas = StaffMember.order("prize3_bet DESC")
     render action: 'prize3_status'
   end
 
   def prize4_status
-    @staffmemberdatas = StaffMember.all
+    @staffmemberdatas = StaffMember.order("prize4_bet DESC")
     render action: 'prize4_status'
   end
 
   def prize5_status
-    @staffmemberdatas = StaffMember.all
+    @staffmemberdatas = StaffMember.order("prize5_bet DESC")
     render action: 'prize5_status'
   end
 

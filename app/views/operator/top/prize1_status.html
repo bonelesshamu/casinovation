@@ -12,7 +12,7 @@
   <td>bet</td>
 </tr>
 <% @staffmemberdatas.each do |data|  %>
-<%   if data.prize1_bet != 0 %>
+<%   if data.prize1_bet && data.prize1_bet != 0 %>
 <tr>
   <td><%= data.id %></td>
   <td><%= data.name %></td>
